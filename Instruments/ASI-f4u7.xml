@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+
+<PropertyList>
+
+ <path>Models/asi-f4u7.ac</path>
+ <texture-path>Models/Textures</texture-path>
+
+    <animation>
+            <type>noshadow</type>
+            <object-name>ASI</object-name>
+    </animation>
+
+
+    <animation include="Instrument-Light4.xml">
+        <object-name>Aiguille</object-name>
+    </animation>
+
+    <animation include="Instrument-Light3.xml">
+        <object-name>Cadran</object-name>
+    </animation>
+
+    <animation include="Instrument-Light3.xml">
+        <object-name>Cadran1</object-name>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Aiguille</object-name>
+        <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+        <interpolation>
+                <entry>
+                        <ind>0</ind>
+                        <dep>0</dep>
+                </entry>
+                <entry>
+                        <ind>50</ind>
+                        <dep>15</dep>
+                </entry>
+                <entry>
+                        <ind>90</ind>    <!--7x4=28deg-->
+                        <dep>43</dep>
+                </entry>
+                <entry>
+                        <ind>150</ind>       <!--9x6=54deg-->
+                        <dep>97</dep>
+                </entry>
+                <entry>
+                        <ind>200</ind>  <!--5x5=25deg-->
+                        <dep>122</dep>
+                </entry>
+                <entry>
+                        <ind>650</ind>    <!--5X45=225deg-->
+                        <dep>347</dep>
+                </entry>
+        </interpolation>
+        <center>
+                <x-m>0.00</x-m>
+                <y-m>0</y-m>
+                <z-m>0</z-m>
+        </center>
+        <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+                </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>Cadran1</object-name>
+        <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+        <interpolation>
+                <entry>
+                        <ind>0</ind>
+                        <dep>0</dep>
+                </entry>
+                <entry>
+                        <ind>60</ind>
+                        <dep>360</dep>
+                </entry>
+        </interpolation>
+        <center>
+                <x-m>0.00</x-m>
+                <y-m>0.00152094</y-m>
+                <z-m>0</z-m>
+        </center>
+        <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+                </axis>
+    </animation>
+
+</PropertyList>

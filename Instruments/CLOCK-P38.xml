@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+
+<PropertyList>
+
+    <path>Models/clock-f4u7.ac</path>
+    <texture-path>Models/Textures</texture-path>
+
+    <animation>
+        <type>noshadow</type>
+        <object-name>CLOCK</object-name>
+    </animation>
+
+
+
+
+
+    <model>
+        <name>BoutonB</name>
+        <path>Aircraft/P-38-Lightning/Instruments/Bouton_pt-Nord.xml</path>
+        <offsets>
+                <x-m>0.0082</x-m>
+                <y-m>0</y-m>
+                <z-m>-0.035</z-m>
+                <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+
+    <!--<model>
+            <name>BoutonH</name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bouton_pt-Nord.xml</path>
+            <offsets>
+                    <x-m>0.0082</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0.040</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+    </model>-->
+
+    <animation include="Instrument-Light4.xml">
+            <object-name>Aiguille-Sec</object-name>
+    </animation>
+
+    <animation include="Instrument-Light4.xml">
+            <object-name>Aiguille-Min</object-name>
+    </animation>
+
+    <animation include="Instrument-Light4.xml">
+            <object-name>Aiguille-Hr</object-name>
+    </animation>
+
+    <animation include="Instrument-Light3.xml">
+            <object-name>Cadran</object-name>
+    </animation>
+
+    ******************** Hotspots ******************************-->
+    <panel>
+        <path>Aircraft/P-38-Lightning/Instruments/CLOCK-f4u7-hotspots.xml</path>
+        <bottom-left>
+                <x-m>0.014</x-m>
+                <y-m>-0.0361132</y-m>
+                <z-m>-0.0376666</z-m>
+        </bottom-left>
+        <bottom-right>
+                <x-m>0.014</x-m>
+                <y-m>0.0361132</y-m>
+                <z-m>-0.0376666</z-m>
+        </bottom-right>
+        <top-left>
+                <x-m>0.014</x-m>
+                <y-m>-0.0361132</y-m>
+                <z-m>0.0376666</z-m>
+        </top-left>
+    </panel>
+<!--*************************************************-->
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Aiguille-Sec</object-name>
+        <property>instrumentation/clock/indicated-sec</property>
+        <factor>6</factor>
+                <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Aiguille-Min</object-name>
+        <property>instrumentation/clock/indicated-min</property>
+        <factor>6</factor>
+        <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+                </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Aiguille-Hr</object-name>
+        <property>instrumentation/clock/indicated-hour</property>
+        <factor>6</factor>
+        <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+
+
+</PropertyList>

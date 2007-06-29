@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+P-38L  by G ROBIN
+
+************************************************************************
+-->
+
+<PropertyList>
+
+    <sim include="Help/P-38L-help.xml">
+
+        <description>P-38L Lightning</description>
+        <author>Gerard ROBIN</author>
+        <status>alpha, "GPL Copyright"</status>
+        <version> 0.1</version>
+        <flight-model>jsb</flight-model>
+        <aero>P38L-new</aero>
+        <startup>
+            <splash-texture>Aircraft/P-38-Lightning/P-38L-splash.rgb</splash-texture>
+        </startup>
+
+        <systems>
+            <autopilot>
+                <path>Aircraft/P-38-Lightning/System/FA-18-autopilot.xml</path>
+            </autopilot>
+        </systems>
+
+        <sound>
+                <path>Aircraft/P-38-Lightning/Sounds/p38-sound.xml</path>
+        </sound>
+
+        <view>
+            <internal archive="y">true</internal>
+            <config>
+                <!-- x/y/z == right/up/back -->
+                <x-offset-m archive="y">0</x-offset-m>
+                <y-offset-m archive="y">0.88</y-offset-m>
+                <z-offset-m archive="y">-0.40</z-offset-m>
+                <default-field-of-view-deg type="double">58.0</default-field-of-view-deg>
+                <pitch-offset-deg archive="y">-15.0</pitch-offset-deg>
+            </config>
+        </view>
+        <chase-distance-m type="double">-20.0</chase-distance-m>
+
+        <model>
+            <path>Aircraft/P-38-Lightning/Models/P38L-model.xml</path>
+        </model>
+
+        <hud>
+            <enable3d>false</enable3d>
+        </hud>
+
+        <flaps>
+                <setting>0.00</setting>
+                <setting>0.25</setting>
+                <setting>0.50</setting>
+                <setting>0.75</setting>
+                <setting>1</setting>
+        </flaps>
+
+    </sim>
+
+    <engines>
+        <engine n="0">
+                <rpm type="double">0</rpm>
+        </engine>
+        <engine n="1">
+                <rpm type="double">0</rpm>
+        </engine>
+    </engines>
+
+
+    <controls>
+        <gear>
+            <brake-parking type="double">1.0</brake-parking>
+        </gear>
+        <engines>
+            <engine n="0">
+                    <magnetos>0</magnetos>
+                    <throttle type="double">0.0</throttle>
+            </engine>
+            <engine n="1">
+                    <magnetos>0</magnetos>
+                    <throttle type="double">0.0</throttle>
+            </engine>
+        </engines>
+    </controls>
+
+
+
+
+    <consumables>
+        <fuel>
+            <tank n="0">
+                <level-gal_us archive="y">224</level-gal_us>
+            </tank>
+            <tank n="1">
+                <level-gal_us archive="y">100</level-gal_us>
+            </tank>
+            <tank n="2">
+                <level-gal_us archive="y">100</level-gal_us>
+            </tank>
+        </fuel>
+    </consumables>
+
+
+
+    <input include="Inputs/P38-input.xml">
+    </input>
+
+
+
+
+  <!--canopy open-->
+    <fdm><jsbsim><fcs>
+        <canopy-control>1</canopy-control>
+    </fcs></jsbsim></fdm>
+
+    <nasal>
+            <p38>
+                    <file>Aircraft/P-38-Lightning/System/p38.nas</file>
+            </p38>
+            <cmd>
+                    <file>Aircraft/P-38-Lightning/System/cmd-p38.nas</file>
+            </cmd>
+            <electrical>
+                    <file>Aircraft/P-38-Lightning/System/electrical.nas</file>
+            </electrical>
+            <nav>
+                    <file>Aircraft/P-38-Lightning/System/nav.nas</file>
+            </nav>
+    </nasal>
+
+
+
+</PropertyList>

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+
+
+
+  <PropertyList>
+    <path>Models/attitude-p38.ac</path>
+    <texture-path>Models/Textures</texture-path>
+
+
+        <!--<animation include="Instrument-Light1.xml">
+                <object-name></object-name>
+        </animation>
+
+        <animation include="Instrument-Light4.xml">
+                <object-name>Index</object-name>
+                <object-name>Horizon</object-name>
+        </animation>
+
+        <animation include="Instrument-Light1.xml">
+                <object-name>Cadran</object-name>
+        </animation>-->
+
+
+    <animation>
+      <type>rotate</type>
+      <object-name>Index</object-name>
+      <object-name>Horizon</object-name>
+      <property>/instrumentation/attitude-indicator/indicated-roll-deg</property>
+      <axis>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+      </axis>
+    </animation>
+    <animation>
+      <type>translate</type>
+      <object-name>Horizon</object-name>
+      <property>/instrumentation/attitude-indicator/indicated-pitch-deg</property>
+      <interpolation>
+	   <entry>
+          <ind>-180</ind>
+          <dep>0.04</dep>
+        </entry>
+        <entry>
+          <ind>-90</ind>
+          <dep>0.04</dep>
+        </entry>
+        <entry>
+          <ind>-40</ind>
+          <dep>0.024</dep>
+        </entry>
+        <entry>
+          <ind>-20</ind>
+          <dep>0.012</dep>
+        </entry>
+        <entry>
+          <ind>0</ind>
+          <dep>0</dep>
+        </entry>
+        <entry>
+          <ind>20</ind>
+          <dep>-0.012</dep>
+        </entry>
+        <entry>
+          <ind>40</ind>
+          <dep>-0.024</dep>
+        </entry>
+        <entry>
+          <ind>90</ind>
+          <dep>-0.04</dep>
+        </entry>
+		<entry>
+          <ind>180</ind>
+          <dep>-0.04</dep>
+        </entry>
+      </interpolation>
+      <axis>
+        <x>0</x>
+        <y>0</y>
+        <z>1</z>
+      </axis>
+    </animation>
+
+  </PropertyList>

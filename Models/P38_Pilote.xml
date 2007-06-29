@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+<!--                 Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+	<path>P38-Pilote.ac</path>
+	<texture-path>Textures/Pilote</texture-path>
+
+</PropertyList>

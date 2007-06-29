@@ -1,0 +1,28 @@
+#===================================================================
+Property of Gerard Robin  France
+This Model is under Copyright GNU GENERAL PUBLIC LICENSE
+see COPYING  file attached to this package.
+
+====================================================================
+Here is the basic flyable model.
+
+
+Mainly to be done:
+
+--------A lot of improvement regarding the FDM, lift and drag, and Engine/propeller performance.
+
+--------A better realistic texture.
+
+--------A cockpit with more instrumentation.
+
+
+
+========================================================================
+
+The Model is loaded with the following configuration:
+
+--------Engine not running
+--------Canopy open
+--------Brake Parking 'on
+
+=======================================================

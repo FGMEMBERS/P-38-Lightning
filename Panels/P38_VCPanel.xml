@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+
+<!--
+    Dedicated only to FlightGear
+    Gerard Robin
+    License:  GPL
+-->
+
+
+
+<PropertyList>
+
+    <path>Models/vcpanel.ac</path>
+    <texture-path>Models/Textures</texture-path>
+
+<!--============Gauche=================-->
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_p-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.189948</y-m>
+                    <z-m>0.159967</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Dummy_p.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.189948</y-m>
+                    <z-m>0.159967</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_p-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.118</y-m>
+                    <z-m>0.159967</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/CLOCK-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.118</y-m>
+                    <z-m>0.159967</z-m>
+            </offsets>
+    </model>
+
+
+
+
+
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_g-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.024543</y-m>
+                    <z-m>0.062406</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Attitude-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.024543</y-m>
+                    <z-m>0.062406</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_n-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.158665</y-m>
+                    <z-m>0.0627544</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/COMPAS-P38.xml</path>
+            <offsets>
+                    <x-m>-0.0287257</x-m>
+                    <y-m>-0.158665</y-m>
+                    <z-m>0.0627544</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_n-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.273443</y-m>
+                    <z-m>0.0448809</z-m>
+            </offsets>
+    </model>
+
+     <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/HI-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.273443</y-m>
+                    <z-m>0.0448809</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_n-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-0.049151</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/IVSI-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-0.049151</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_n-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.0906723</y-m>
+                    <z-m>-0.049151</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/TURN-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.0906723</y-m>
+                    <z-m>-0.049151</z-m>
+            </offsets>
+    </model>
+
+
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_n-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.181901</y-m>
+                    <z-m>-0.049151</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/ASI-f4u7.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.181901</y-m>
+                    <z-m>-0.049151</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_n-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.273657</y-m>
+                    <z-m>-0.049151</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/ALT-f4u7.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.273657</y-m>
+                    <z-m>-0.049151</z-m>
+            </offsets>
+    </model>
+
+
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_p-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.348555</y-m>
+                    <z-m>-0.0471297</z-m>
+            </offsets>
+    </model>
+
+     <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Dummy_p.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.348555</y-m>
+                    <z-m>-0.0471297</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_p-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.348555</y-m>
+                    <z-m>-0.127819</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/FUEL-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.348555</y-m>
+                    <z-m>-0.127819</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_p-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.275786</y-m>
+                    <z-m>-0.127819</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Dummy_p.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>-0.275786</y-m>
+                    <z-m>-0.127819</z-m>
+            </offsets>
+    </model>
+
+
+
+
+
+    <!--==============Droite=======================-->
+
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_s-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.0979301</y-m>
+                    <z-m>0.0883114</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/RPM0-P38.xml</path>
+            <offsets>
+                    <x-m>0.00347176</x-m>
+                    <y-m>0.0979301</y-m>
+                    <z-m>0.0883114</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_s-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.196389</y-m>
+                    <z-m>0.0883114</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/RPM1-P38.xml</path>
+            <offsets>
+                    <x-m>0.00347176</x-m>
+                    <y-m>0.196389</y-m>
+                    <z-m>0.0883114</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_n-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.10069</y-m>
+                    <z-m>-0.0112893</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/CTRL_OIL_FUEL-0-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.10069</y-m>
+                    <z-m>-0.0112893</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_n-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.19574</y-m>
+                    <z-m>-0.0112893</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/CTRL_OIL_FUEL-1-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.19574</y-m>
+                    <z-m>-0.0112893</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_n-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.29414</y-m>
+                    <z-m>0.0418085</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Dummy-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.29414</y-m>
+                    <z-m>0.0418085</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_n-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.29414</y-m>
+                    <z-m>-0.0532661</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Dummy-Nord.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.29414</y-m>
+                    <z-m>-0.0532661</z-m>
+            </offsets>
+    </model>
+
+
+
+</PropertyList>

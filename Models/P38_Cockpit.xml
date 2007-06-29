@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+   <!--             Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+    <path>p38-cockpit.ac</path>
+    <texture-path>Textures/texture-us</texture-path>
+
+
+
+    <model>
+        <name>Panel</name>
+        <path>Aircraft/P-38-Lightning/Panels/P38_VCPanel.xml</path>
+        <offsets>
+            <x-m>-1.21665</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.410861</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>Pilote</name>
+        <path>Aircraft/P-38-Lightning/Models/P38_Pilote.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+
+    <animation>
+        <type>select</type>
+        <object-name>Pilote</object-name>
+        <condition>
+            <not>
+            <equals>
+                <property>sim/current-view/view-number</property>
+                <value>0</value>
+            </equals>
+            </not>
+        </condition>
+    </animation>
+
+    <model>
+        <name>Ignition</name>
+        <path>Aircraft/P-38-Lightning/Instruments/Ignition-P38.xml</path>
+        <offsets>
+            <x-m>-1.17066</x-m>
+            <y-m>-0.082285</y-m>
+            <z-m>0.198027</z-m>
+            <pitch-deg>-90</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>Temoin-Train</name>
+        <path>Aircraft/P-38-Lightning/Instruments/Temoin-train.xml</path>
+        <offsets>
+            <x-m>-0.848791</x-m>
+            <y-m>-0.239104</y-m>
+            <z-m>0.173058</z-m>
+            <heading-deg>90</heading-deg>
+        </offsets>
+    </model>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Manche</object-name>
+        <property>controls/flight/elevator</property>
+        <factor>-10</factor>
+        <center>
+                <x-m>-0.85063</x-m>
+                <y-m>0</y-m>
+                <z-m>-0.12872</z-m>
+        </center>
+        <axis>
+                <x>0.0</x>
+                <y>1.0</y>
+                <z>0.0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Volant</object-name>
+        <property>controls/flight/elevator</property>
+        <factor>-10</factor>
+        <center>
+                <x-m>-0.85063</x-m>
+                <y-m>0</y-m>
+                <z-m>-0.12872</z-m>
+        </center>
+        <axis>
+                <x>0.0</x>
+                <y>1.0</y>
+                <z>0.0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Volant</object-name>
+        <property>controls/flight/aileron</property>
+        <factor>-10</factor>
+        <center>
+                <x-m>0</x-m>
+                <y-m>0</y-m>
+                <z-m>0.29403</z-m>
+        </center>
+        <axis>
+                <x>1.0</x>
+                <y>0.0</y>
+                <z>0.0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Train-Cde</object-name>
+        <property>gear/gear[0]/position-norm</property>
+        <interpolation>
+                <entry>
+                        <ind>0</ind>
+                        <dep>-60</dep>
+                </entry>
+                <entry>
+                        <ind>1</ind>
+                        <dep>0</dep>
+                </entry>
+        </interpolation>
+        <center>
+                <x-m>-0.757587</x-m>
+                <y-m>0</y-m>
+                <z-m>0.10116</z-m>
+        </center>
+        <axis>
+                <x>0</x>
+                <y>1</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Flaps-Cde</object-name>
+        <property>/surface-positions/flap-pos-norm</property>
+        <factor>90</factor>
+        <center>
+                <x-m>-0.955077</x-m>
+                <y-m>0</y-m>
+                <z-m>0.222142</z-m>
+        </center>
+        <axis>
+                <x>0</x>
+                <y>1</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Throttle0-Cde</object-name>
+        <property>/controls/engines/engine[0]/throttle/</property>
+        <interpolation>
+                <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+                </entry>
+                <entry>
+                <ind>0.98</ind>
+                <dep>-60</dep>
+                </entry>
+                <entry>
+                <ind>1</ind>
+                <dep>-70</dep>
+                </entry>
+        </interpolation>
+        <center>
+                <x-m>-0.792077</x-m>
+                <y-m>0</y-m>
+                <z-m>0.201521</z-m>
+        </center>
+        <axis>
+                <x>0</x>
+                <y>1</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Throttle1-Cde</object-name>
+        <property>/controls/engines/engine[1]/throttle/</property>
+        <interpolation>
+                <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+                </entry>
+                <entry>
+                <ind>0.98</ind>
+                <dep>-60</dep>
+                </entry>
+                <entry>
+                <ind>1</ind>
+                <dep>-70</dep>
+                </entry>
+        </interpolation>
+        <center>
+                <x-m>-0.792077</x-m>
+                <y-m>0</y-m>
+                <z-m>0.201521</z-m>
+        </center>
+        <axis>
+                <x>0</x>
+                <y>1</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+
+
+
+</PropertyList>
