@@ -5,7 +5,7 @@
     Copyright License:  GPL
 -->
 <PropertyList>
-    <help>
+
         <title>P-38L  Lightning</title>
         <key>
                 <name>d</name>
@@ -35,5 +35,5 @@
         <line>===========Engine Mixture==========</line>
         <line>after takeoff the engine mixture value must be 0.69 </line>
         <line></line>
-    </help>
+
 </PropertyList>

@@ -5,7 +5,7 @@
 
  <propeller name="Curtiss-3blades">
   <ixx>18.4936</ixx>
-  <diameter unit="IN">140.0</diameter>
+  <diameter unit="IN">140.0</diameter> <!--138 on drawing-->
   <numblades>3</numblades>
   <gearratio>1.74</gearratio>
   <minpitch>12</minpitch>

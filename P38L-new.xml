@@ -43,6 +43,14 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
 
 
 
+    *  110 gallons, in two 55 gal. leading edge tanks
+    * 180 gallons, in two 90 gal. main fuel tanks, located in the wings between the engine nacelles and the center
+    * 120 gallons, in two 60 gal. reserve tanks, also between the engine nacelles
+    * 500 gallons, in two 250 gal. drop tanks
+    ===must be checked , other specification give a total of 1024 gallons==
+
+
+
   File:     P38L.xml
   Author:   Aero-Matic v 0.71
 
@@ -82,7 +90,7 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
         <wingarea unit="FT2"> 327.50 </wingarea>
         <wingspan unit="FT"> 52 </wingspan>
         <wing_incidence>          2.00 </wing_incidence> <!--aeromatic 2 -->
-        <chord unit="FT"> 9.30 </chord> <!--estimated with drawing-->
+        <chord unit="FT"> 9.75 </chord> <!--from drawing  117 inch -->
         <htailarea unit="FT2"> 80 </htailarea><!--estimated with drawing-->
         <htailarm unit="FT"> 21 </htailarm><!--estimated with drawing-->
         <vtailarea unit="FT2"> 50 </vtailarea> <!--estimated with drawing-->
@@ -165,7 +173,7 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             <brake_group> RIGHT </brake_group>
             <retractable>1</retractable>
         </contact>
-        <contact type="BOGEY" name="WT_LEFT">
+        <contact type="STRUCT" name="WT_LEFT">
             <location unit="IN">
                 <x> 0 </x>
                 <y> -316.9 </y>
@@ -173,14 +181,10 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             </location>
             <static_friction> 0.2 </static_friction>
             <dynamic_friction> 0.2 </dynamic_friction>
-            <rolling_friction> 2 </rolling_friction>
             <spring_coeff unit="LBS/FT"> 20000 </spring_coeff>
             <damping_coeff unit="LBS/FT/SEC"> 6000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>
-            <brake_group> NONE </brake_group>
-            <retractable>0</retractable>
         </contact>
-        <contact type="BOGEY" name="WT_RIGHT">
+        <contact type="STRUCT" name="WT_RIGHT">
             <location unit="IN">
                 <x> 0 </x>
                 <y> 316.9 </y>
@@ -188,12 +192,8 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             </location>
             <static_friction> 0.2 </static_friction>
             <dynamic_friction> 0.2 </dynamic_friction>
-            <rolling_friction> 2 </rolling_friction>
             <spring_coeff unit="LBS/FT"> 20000 </spring_coeff>
             <damping_coeff unit="LBS/FT/SEC"> 6000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>
-            <brake_group> NONE </brake_group>
-            <retractable>0</retractable>
         </contact>
         <!--<contact type="BOGEY" name="VT_LEFTUP">
             <location unit="IN">
@@ -225,7 +225,7 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             <brake_group> NONE </brake_group>
             <retractable>0</retractable>
         </contact>-->
-        <contact type="BOGEY" name="VT_LEFTDOWN">
+        <contact type="STRUCT" name="VT_LEFTDOWN">
             <location unit="IN">
                 <x> 267.30669</x>
                 <y> -98.42 </y>
@@ -233,14 +233,10 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             </location>
             <static_friction> 0.2 </static_friction>
             <dynamic_friction> 0.2 </dynamic_friction>
-            <rolling_friction> 2 </rolling_friction>
             <spring_coeff unit="LBS/FT"> 10000</spring_coeff>
             <damping_coeff unit="LBS/FT/SEC"> 3000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>
-            <brake_group> NONE </brake_group>
-            <retractable>0</retractable>
         </contact>
-        <contact type="BOGEY" name="VT_RIGHTDOWN">
+        <contact type="STRUCT" name="VT_RIGHTDOWN">
             <location unit="IN">
                 <x> 267.30669</x>
                 <y> 98.42 </y>
@@ -248,14 +244,10 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             </location>
             <static_friction> 0.2 </static_friction>
             <dynamic_friction> 0.2 </dynamic_friction>
-            <rolling_friction> 2 </rolling_friction>
             <spring_coeff unit="LBS/FT"> 10000 </spring_coeff>
             <damping_coeff unit="LBS/FT/SEC"> 3000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>
-            <brake_group> NONE </brake_group>
-            <retractable>0</retractable>
         </contact>
-        <contact type="BOGEY" name="BELLYLEFT">
+        <contact type="STRUCT" name="BELLYLEFT">
             <location unit="IN">
                 <x> -33.554331</x>
                 <y> -102.32283</y>
@@ -263,14 +255,10 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             </location>
             <static_friction> 0.2 </static_friction>
             <dynamic_friction> 0.2 </dynamic_friction>
-            <rolling_friction> 2 </rolling_friction>
             <spring_coeff unit="LBS/FT"> 30000 </spring_coeff>
             <damping_coeff unit="LBS/FT/SEC"> 10000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>
-            <brake_group> NONE </brake_group>
-            <retractable>0</retractable>
         </contact>
-        <contact type="BOGEY" name="BELLYRIGHT">
+        <contact type="STRUCT" name="BELLYRIGHT">
             <location unit="IN">
                 <x> -33.554331</x>
                 <y> 102.32283</y>
@@ -278,12 +266,8 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             </location>
             <static_friction> 0.2 </static_friction>
             <dynamic_friction> 0.2 </dynamic_friction>
-            <rolling_friction> 2 </rolling_friction>
             <spring_coeff unit="LBS/FT"> 30000 </spring_coeff>
             <damping_coeff unit="LBS/FT/SEC"> 10000 </damping_coeff>
-            <max_steer unit="DEG"> 0.0 </max_steer>
-            <brake_group> NONE </brake_group>
-            <retractable>0</retractable>
         </contact>
     </ground_reactions>
     <propulsion>
@@ -313,7 +297,7 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
                     <yaw> 0.0 </yaw>
                 </orient>
                  <sense> -1 </sense>
-                <p_factor> 60</p_factor>
+                <p_factor>60</p_factor>
             </thruster>
         </engine>
 
@@ -343,7 +327,7 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
                     <yaw> 0.0 </yaw>
                 </orient>
                  <sense> 1 </sense>
-                <p_factor> 60</p_factor>
+                <p_factor>60</p_factor>
             </thruster>
         </engine>
 
@@ -375,17 +359,21 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             <contents unit="LBS"> 1000 </contents>
         </tank>
     </propulsion>
-    <flight_control name="FCS: P38L">
 
-        <!--<property>fcs/canopy-cmd-norm</property>
-        <property>fcs/canopy-pos-norm</property>-->
+    <flight_control name="FCS: P38L">
+        <property>/engines/engine[0]/thruster/rpm</property>
+        <property>/engines/engine[1]/thruster/rpm</property>
+        <property>fcs/aileron-pos-norm</property>
         <property>/controls/flight/cowl-flap</property>
         <property>/surface-positions/cowl-flap-pos-norm</property>
+        <property>/surface-positions/canopy-pos-norm</property>
         <property>fcs/canopy-control</property>
-        <property>/consumables/fuel/total-fuel-gal</property>
+        <property>/instrumentation/lights/blinker-kinemat-in</property>
+        <property>/instrumentation/lights/blinker-kinemat-out</property>
+        <property>/instrumentation/lights/beacon-on</property>
+        <property>/consumables/fuel/total-fuel-gals</property>
 
-
-     <channel name="All">
+     <channel name="Pitch">
 
         <summer name="Pitch Trim Sum">
             <input>fcs/elevator-cmd-norm</input>
@@ -406,6 +394,9 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             <output>fcs/elevator-pos-rad</output>
         </aerosurface_scale>
 
+    </channel>
+    <channel name="Roll">
+
         <summer name="Roll Trim Sum">
             <input>fcs/aileron-cmd-norm</input>
             <input>fcs/roll-trim-cmd-norm</input>
@@ -413,7 +404,14 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
                 <min>-1</min>
                 <max>1</max>
             </clipto>
+            <output>fcs/aileron-pos-norm</output>
         </summer>
+
+        <pure_gain name="Aileron Position">
+            <input>fcs/aileron-pos-norm</input>
+            <gain>1</gain>
+            <output>/surface-positions/aileron-pos-norm</output>
+        </pure_gain>
 
         <aerosurface_scale name="Left Aileron Control">
             <input>fcs/roll-trim-sum</input>
@@ -432,7 +430,9 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             </range>
             <output>fcs/right-aileron-pos-rad</output>
         </aerosurface_scale>
+    </channel>
 
+    <channel name="Yaw">
         <summer name="Rudder Command Sum">
             <input>fcs/rudder-cmd-norm</input>
             <input>fcs/yaw-trim-cmd-norm</input>
@@ -440,6 +440,7 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
                 <min>-1</min>
                 <max>1</max>
             </clipto>
+            <output>fcs/rudder-pos-norm</output>
         </summer>
 
         <aerosurface_scale name="Rudder Control">
@@ -450,28 +451,44 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             </range>
             <output>fcs/rudder-pos-rad</output>
         </aerosurface_scale>
+    </channel>
+
+    <channel name="Lift">
+
+        <switch  name="Flap Cmd Filter" >
+            <default value="fcs/flap-cmd-norm"/>
+            <test  logic="AND" value="0">
+                velocities/vc-kts gt 200
+            </test>
+            <output>/controls/flight/flaps</output>
+        </switch>
+
+        <pure_gain name="Flap Cmd">
+            <input>fcs/flap-cmd-filter</input>
+            <gain>1</gain>
+        </pure_gain>
 
         <kinematic name="Flaps Control">
-            <input>fcs/flap-cmd-norm</input>
+            <input>fcs/flap-cmd</input>
             <traverse>
                 <setting>
                     <position>0</position>
                     <time>0</time>
                 </setting>
                 <setting>
-                    <position>7</position>
+                    <position>10</position>
                     <time>2</time>
                 </setting>
                 <setting>
-                    <position>14</position>
+                    <position>20</position>
                     <time>2</time>
                 </setting>
                 <setting>
-                    <position>21</position>
+                    <position>30</position>
                     <time>2</time>
                 </setting>
                 <setting>
-                    <position>28</position>
+                    <position>38</position>
                     <time>2</time>
                 </setting>
             </traverse>
@@ -482,7 +499,7 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
                 <input>fcs/flaps-control</input>
                 <domain>
                         <min>0</min>
-                        <max>30</max>
+                        <max>38</max>
                 </domain>
                 <range>
                         <min>0</min>
@@ -491,6 +508,10 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
                 <output>fcs/flap-pos-norm</output>
         </aerosurface_scale>
 
+
+    </channel>
+
+    <channel name="Landing Gear">
         <kinematic name="Gear Control">
             <input>gear/gear-cmd-norm</input>
             <traverse>
@@ -505,7 +526,22 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             </traverse>
             <output>gear/gear-pos-norm</output>
         </kinematic>
+<!--<documentation>Only for 3D model animation</documentation>-->
+        <switch  name="Wheel Rotation Factor" >
+            <default value="0"/>
+            <test  logic="AND" value="1">
+                /position/altitude-agl-ft lt 7
+                gear/gear-pos-norm == 1
+            </test>
+        </switch>
+<!--<documentation>Only for 3D model animation</documentation>-->
+        <pure_gain name="Wheel Rotation">
+            <input>velocities/u-fps</input>
+            <gain>fcs/wheel-rotation-factor</gain>
+        </pure_gain>
+    </channel>
 
+    <channel name="Speedbrake">
         <kinematic name="Speedbrake Control">
             <input>fcs/speedbrake-cmd-norm</input>
             <traverse>
@@ -520,25 +556,186 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             </traverse>
             <output>fcs/speedbrake-pos-norm</output>
         </kinematic>
+     </channel>
 
-        <summer name="Throttle0">
+    <channel name="Throttle">
+       <!-- <summer name="Throttle0">
             <input>/controls/engines/engine[0]/throttle</input>
             <clipto>
                 <min>0.2</min>
                 <max>1.0</max>
             </clipto>
             <output>fcs/throttle-cmd-norm</output>
-        </summer>
+        </summer>-->
 
-        <summer name="Throttle1">
+        <!--throttle to 0.2.5  if starter on -->
+        <switch name="Throttle0 Starter">
+            <default value="/controls/engines/engine[0]/throttle"/>
+            <test  logic="AND" value="0.22">
+                /engines/engine[0]/starter == 1
+            </test>
+            <output>/controls/engines/engine[0]/throttle</output>
+        </switch>
+
+       <!-- <summer name="Throttle1">
             <input>/controls/engines/engine[1]/throttle</input>
             <clipto>
                 <min>0.2</min>
                 <max>1.0</max>
             </clipto>
             <output>fcs/throttle-cmd-norm[1]</output>
+        </summer>-->
+
+        <switch name="Throttle1 Starter">
+            <default value="/controls/engines/engine[1]/throttle"/>
+            <test  logic="AND" value="0.22">
+                /engines/engine[1]/starter == 1
+            </test>
+            <output>/controls/engines/engine[1]/throttle</output>
+        </switch>
+
+        <switch name="Supercharger Engage">
+                <default value="0"/>
+                <test  logic="OR" value="1">
+                   /controls/engines/engine[0]/throttle  gt 0.98
+                   /controls/engines/engine[1]/throttle  gt 0.98
+                </test>
+                <test  logic="AND" value="1">
+                   fcs/supercharger-engage  == 1
+                </test>
+        </switch>
+
+        <kinematic name="Supercharger Throttle Control">
+            <input>fcs/supercharger-engage</input>
+            <traverse>
+            <setting>
+                <position>0 </position>
+                <time>     0 </time>
+            </setting>
+            <setting>
+                <position> 1</position>
+                <time>     300 </time>
+            </setting>
+            </traverse>
+        </kinematic>
+
+        <!--<pure_gain name="Throttle0 Cmd Norm">
+            <input>fcs/throttle-cmd-norm[0]</input>
+            <gain>1</gain>
+        </pure_gain>-->
+
+        <switch name="Supercharger Throttle0">
+            <default value="/controls/engines/engine[0]throttle"/>
+            <test  logic="AND" value="0.98">
+                fcs/supercharger-throttle-control == 1
+            </test>
+            <output>/controls/engines/engine[0]throttle</output>
+        </switch>
+
+        <!--<pure_gain name="Throttle1 Cmd Norm">
+            <input>fcs/throttle-cmd-norm[1]</input>
+            <gain>1</gain>
+        </pure_gain>-->
+
+        <switch name="Supercharger Throttle1">
+            <default value="/controls/engines/engine[1]throttle"/>
+            <test  logic="AND" value="0.98">
+                fcs/supercharger-throttle-control == 1
+            </test>
+            <output>/controls/engines/engine[1]throttle</output>
+        </switch>
+    </channel>
+
+
+    <channel name="Differential Throttle Cmd">
+
+            <switch name="fcs/differential-throttle-pos-norm">
+                <default value="0"/>
+                <test  logic="AND" value="/controls/flight/rudder">
+                    /gear/gear[0]/wow == 1
+                    gear/gear-pos-norm == 1
+                    velocities/vc-kts lt 30
+                    position/h-agl-ft lt 7
+                    /controls/engines/engine[0]/throttle lt 0.40
+                    /controls/engines/engine[1]/throttle lt 0.40
+                </test>
+            </switch>
+
+            <pure_gain name="Differential Throttle Left Pos Norm">
+                <input>fcs/differential-throttle-pos-norm</input>
+                <gain>1</gain>
+            </pure_gain>
+
+            <pure_gain name="Differential Throttle Right Pos Norm">
+                <input>fcs/differential-throttle-pos-norm</input>
+                <gain>-1</gain>
+            </pure_gain>
+
+            <summer name="Throttle0 Range">
+                <input>/controls/engines/engine[0]/throttle</input>
+                <input>fcs/differential-throttle-left-pos-norm</input>
+                <clipto>
+                    <min>0.2</min>
+                    <max>1.0</max>
+                </clipto>
+                <output>fcs/throttle-cmd-norm[0]</output>
+            </summer>
+
+            <summer name="Throttle1 Range">
+                <input>/controls/engines/engine[1]/throttle</input>
+                <input>fcs/differential-throttle-right-pos-norm</input>
+                <clipto>
+                    <min>0.2</min>
+                    <max>1.0</max>
+                </clipto>
+                <output>fcs/throttle-cmd-norm[1]</output>
+            </summer>
+        </channel>
+
+<documentation>unactable  the prop pitch Key===remains  Constant speed Propeller</documentation>
+    <channel name="Propeller">
+        <summer name="Propeller0 Pitch Cmd">
+            <input>/controls/engines/engine[0]/propeller-pitch</input>
+            <clipto>
+                <min> 1 </min>
+                <max> 1 </max>
+            </clipto>
+            <output>/controls/engines/engine[0]/propeller-pitch</output>
         </summer>
 
+        <summer name="Propeller1 Pitch Cmd">
+            <input>/controls/engines/engine[1]/propeller-pitch</input>
+            <clipto>
+                <min> 1 </min>
+                <max> 1 </max>
+            </clipto>
+            <output>/controls/engines/engine[1]/propeller-pitch</output>
+        </summer>
+<!--<documentation>Only for 3D model animation</documentation>-->
+        <scheduled_gain name="Propeller0 Rotation">
+            <input>/engines/engine[0]/thruster/rpm</input>
+            <table>
+                <independentVar>/engines/engine[0]/thruster/rpm</independentVar>
+                <tableData>
+                    0.0000	1.0000
+                    1500	0.009
+                </tableData>
+            </table>
+        </scheduled_gain>
+<!--<documentation>Only for 3D model animation</documentation>-->
+        <scheduled_gain name="Propeller1 Rotation">
+            <input>/engines/engine[1]/thruster/rpm</input>
+            <table>
+                <independentVar>/engines/engine[1]/thruster/rpm</independentVar>
+                <tableData>
+                    0.0000	1.0000
+                    1500	0.009
+                </tableData>
+            </table>
+        </scheduled_gain>
+    </channel>
+
+    <channel name="Fuel">
         <summer name="Tank Capacity">
             <input>/consumables/fuel/tank[0]level-gal_us</input>
             <input>/consumables/fuel/tank[1]level-gal_us</input>
@@ -547,11 +744,11 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
                 <min>0</min>
                 <max>1024</max>
             </clipto>
-            <output>/consumables/fuel/total-fuel-gal</output>
+            <output>/consumables/fuel/total-fuel-gals</output>
         </summer>
+    </channel>
 
-
-
+    <channel name="Externals">
         <switch name="Canopy Cmd Norm">
                 <default value="0"/>
                 <test  logic="AND" value="1">
@@ -573,17 +770,28 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
                     <time>5</time>
                 </setting>
             </traverse>
-            <output>fcs/canopy-pos-norm</output>
         </kinematic>
 
+        <pure_gain name="Canopy Pos Norm">
+            <input>fcs/canopy</input>
+            <gain>1</gain>
+            <output>/surface-positions/canopy-pos-norm</output>
+        </pure_gain>
 
-
-
-
-
+        <switch name="Cowl Flap Cmd Norm">
+                <default value="0"/>
+                <test  logic="OR" value="1">
+                    /gear/gear[0]/wow gt 0
+                    /gear/gear[1]/wow gt 0
+                    /gear/gear[2]/wow gt 0
+                </test>
+                <test  logic="AND" value="1">
+                    /controls/flight/cowl-flap == 1
+                </test>
+        </switch>
 
         <kinematic name="Cowl Flap Control">
-            <input>/controls/flight/cowl-flap</input>
+            <input>fcs/cowl-flap-cmd-norm</input>
             <traverse>
                     <setting>
                             <position>0</position>
@@ -599,6 +807,130 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
 
 
      </channel>
+
+     <channel name="Electric Master">
+        <summer name="Electric Master Switch">
+            <input>/controls/electric/master-switch</input>
+            <clipto>
+                <min>0.0000</min>
+                <max>1.0000</max>
+            </clipto>
+        </summer>
+
+        <switch name="Master Switch">
+            <default value="0"/>
+            <test  logic="OR" value="1">
+                /controls/engines/engine[0]/magnetos gt 0
+                /controls/engines/engine[1]/magnetos gt 0
+            </test>
+            <output>/controls/electric/master-switch</output>
+        </switch>
+
+        <switch name="Battery Switch">
+            <default value="0"/>
+            <test  logic="AND" value="1">
+                /controls/electric/master-switch == 1
+            </test>
+            <output>/controls/electric/battery-switch</output>
+        </switch>
+
+        <switch name="External Power">
+            <default value="0"/>
+            <test  logic="AND" value="1">
+                /controls/electric/master-switch == 1
+            </test>
+            <output>/controls/electric/external-power</output>
+        </switch>
+
+        <switch name="Engine0 Master Bat">
+            <default value="0"/>
+            <test  logic="AND" value="1">
+                /controls/electric/master-switch == 1
+            </test>
+            <output>/controls/engines/engine[0]/master-bat</output>
+        </switch>
+
+        <switch name="Engine1 Master Bat">
+            <default value="0"/>
+            <test  logic="AND" value="1">
+                /controls/electric/master-switch == 1
+            </test>
+            <output>/controls/engines/engine[1]/master-bat</output>
+        </switch>
+
+        <switch name="Master Avionics">
+            <default value="0"/>
+            <test  logic="AND" value="1">
+                /controls/electric/master-switch == 1
+            </test>
+            <output>/controls/switches/master-avionics</output>
+        </switch>
+
+        <switch name="Instruments Factor">
+            <default value="0"/>
+            <test  logic="AND" value="1">
+                /controls/electric/master-switch == 1
+                /systems/electrical/outputs/instrument-lights gt 27
+            </test>
+        </switch>
+
+        <pure_gain name="Instruments Lighting">
+            <input>fcs/instruments-factor</input>
+            <gain>fcs/lighting-instruments-norm</gain>
+            <output>/controls/lighting/instruments-norm</output>
+        </pure_gain>
+    </channel>
+
+<documentation>Only for 3D model animation</documentation>
+     <channel name="Outdoor Lighting">
+
+            <switch name="blinker-sw">
+                <default value="/instrumentation/lights/blinker-kinemat-in"/>
+                <test logic="AND" value="1">
+                    /instrumentation/lights/blinker-kinemat-in == 0
+                    /instrumentation/lights/blinker-kinemat-out == 0
+                </test>
+                <test logic="AND" value="0">
+                    /instrumentation/lights/blinker-kinemat-in == 1
+                    /instrumentation/lights/blinker-kinemat-out == 1
+                </test>
+                <output>/instrumentation/lights/blinker-kinemat-in</output>
+        </switch>
+
+        <kinematic name="blinker-norm">
+            <input>/instrumentation/lights/blinker-kinemat-in</input>
+            <traverse>
+                <setting>
+                    <position>0</position>
+                    <time>0</time>
+                </setting>
+                <setting>
+                    <position>1</position>
+                    <time>1</time>
+                </setting>
+            </traverse>
+            <output>/instrumentation/lights/blinker-kinemat-out</output>
+        </kinematic>
+
+        <switch name="beacon-sw">
+            <default value="0"/>
+            <test logic="AND" value="1">
+                /instrumentation/lights/blinker-kinemat-out > 0.90
+                /instrumentation/lights/blinker-kinemat-out lt 0.97
+            </test>
+            <output>/instrumentation/lights/beacon-on</output>
+        </switch>
+
+        <switch name="landing light">
+            <default value="0"/>
+            <test logic="AND" value="1">
+                gear/gear-pos-norm  == 1
+                /systems/electrical/outputs/landing-light  gt 27
+                /controls/lighting/landing-lights  == 1
+            </test>
+        </switch>
+
+        </channel>
 
     </flight_control>
     <aerodynamics>
@@ -626,6 +958,29 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
                   </table>
             </product>
         </function>
+
+           <function name="aero/function/kCLpw">
+            <description>Change_in_lift_due_to_propeller_wash</description>
+            <product>
+                  <table>
+                      <independentVar lookup="row" >aero/qbar-psf</independentVar>
+                      <independentVar lookup="column">propulsion/engine/thrust-coefficient</independentVar>
+                      <tableData>
+                                          0.040  0.000
+                          00.0000	  1.410  1.000
+                          50.0000	  1.000  1.000
+                      </tableData>
+                  </table>
+            </product>
+        </function>
+
+<documentation>
+    must be improved
+    this is a try : the propellerwash effect on the wing, at low speed
+    that lift effect is maximum when the qbar-psf is close to zero and propeller thrust to maximum (here 0.04)
+    that effect is null when qbar-psf is 50 (100 kts) and propeller thrust close to zero
+    we suppose that both engines are running
+</documentation>
 
         <axis name="DRAG">
             <function name="aero/coefficient/CD0">
@@ -744,6 +1099,7 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
                     <property>aero/qbar-psf</property>
                     <property>metrics/Sw-sqft</property>
                     <property>aero/function/kCLge</property>
+                    <property>aero/function/kCLpw</property>
                       <table>
                           <independentVar>aero/alpha-rad</independentVar>
                           <tableData>
@@ -767,15 +1123,15 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
                     <property>aero/qbar-psf</property>
                     <property>metrics/Sw-sqft</property>
                     <property>aero/function/kCLge</property>
+                    <property>aero/function/kCLpw</property>
                     <table>
                             <independentVar>fcs/flap-pos-deg</independentVar>
                             <tableData>
                                 0.0000	0.0000
                                 10.0000	0.3000
                                 20.0000	0.5500
-                                30.0000	0.8000
-                                40.0000    0.9500
-                                50.0000   1.1000
+                                30.0000	0.8500
+                                38.0000    1.1000
                           </tableData>
                       </table>
                     <value>0.3500</value>

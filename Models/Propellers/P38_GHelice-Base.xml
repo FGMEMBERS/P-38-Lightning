@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+   <!--             Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+
+    <!--<texture-path>Textures/texture-us</texture-path>-->
+
+    <offsets>
+        <roll-deg>0</roll-deg>
+    </offsets>
+
+    <model>
+        <name>Pale1</name>
+        <path>Aircraft/P-38-Lightning/Models/Propellers/P38_PaleGHelice.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+            <roll-deg>0</roll-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>Pale2</name>
+        <path>Aircraft/P-38-Lightning/Models/Propellers/P38_PaleGHelice.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+            <roll-deg>120</roll-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>Pale3</name>
+        <path>Aircraft/P-38-Lightning/Models/Propellers/P38_PaleGHelice.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+            <roll-deg>240</roll-deg>
+        </offsets>
+    </model>
+
+
+
+
+</PropertyList>

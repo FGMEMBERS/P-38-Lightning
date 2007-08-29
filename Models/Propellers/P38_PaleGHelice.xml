@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+   <!--             Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+    <path>p38-pale-ghelice.ac</path>
+    <texture-path>Textures</texture-path>
+
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Pale</object-name>
+       <!-- <property>/engines/engine/thruster/pitch</property>-->
+       <!--pas utilisé-->
+        <factor>0</factor>
+        <center>
+                <x-m>0.147697</x-m>
+                <y-m>0.000399319</y-m>
+                <z-m>-0.0526335</z-m>
+        </center>
+        <axis>
+                <x>0.0</x>
+                <y>0.0</y>
+                <z>1.0</z>
+        </axis>
+    </animation>
+
+</PropertyList>

@@ -2,8 +2,8 @@
 
 <PropertyList>
 
-    <path>P-38L-nez.ac</path>
-    <texture-path>Textures/texture-us</texture-path>
+    <path>F-5B-nez.ac</path>
+    <texture-path>Textures/texture-fr</texture-path>
 
 
 
@@ -12,10 +12,9 @@
         <pitch-deg>0</pitch-deg>
     </offsets>
 
-
     <model>
         <name>Base</name>
-        <path>Aircraft/P-38-Lightning/Models/P38L_Base.xml</path>
+        <path>Aircraft/P-38-Lightning/Models/F5B_Base.xml</path>
         <offsets>
             <x-m>0</x-m>
             <y-m>0</y-m>

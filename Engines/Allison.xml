@@ -10,7 +10,7 @@
     <injected>1</injected>
     <minmp unit="INHG">          6.0 </minmp>
     <maxmp unit="INHG">         40.0 </maxmp>
-    <displacement unit="IN3"> 2804.00 </displacement>
+    <displacement unit="IN3"> 1710</displacement>
     <maxhp>        1600 </maxhp>
     <cycles>         2.0 </cycles>
     <idlerpm>      1000.0 </idlerpm>

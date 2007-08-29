@@ -31,7 +31,7 @@
         <animation>
                 <type>rotate</type>
                 <object-name>Aiguille</object-name>
-                <property>/consumables/fuel/total-fuel-gal</property>
+                <property>/consumables/fuel/total-fuel-gals</property>
                 <factor>0.51800052</factor>
                 <!--80 degres=1000lbs=154.44gal_us-->
                 <!--<interpolation>

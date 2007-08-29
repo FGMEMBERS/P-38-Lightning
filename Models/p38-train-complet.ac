@@ -105,7 +105,7 @@ kids 0
 OBJECT poly
 name "Nacelle"
 loc -1.10031 0.0391376 -6.28643e-08
-texture "texture-princ.rgb"
+texture "F4U7-ModuleFond.rgb"
 crease 45.000000
 numvert 59
 0.900806 -0.293327 0.221269
@@ -546,7 +546,7 @@ kids 0
 OBJECT poly
 name "line"
 loc 1.21871 -0.118662 -6.28643e-08
-texture "texture-princ.rgb"
+texture "F4U7-ModuleFond.rgb"
 crease 45.000000
 numvert 88
 1.45579 0.176116 -2.68967

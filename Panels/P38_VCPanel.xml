@@ -391,6 +391,26 @@
             </offsets>
     </model>
 
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Bezel_n-P38.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.100824</y-m>
+                    <z-m>-0.113662</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name></name>
+            <path>Aircraft/P-38-Lightning/Instruments/Temoin-TRAIN-f4u7.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0.100824</y-m>
+                    <z-m>-0.113662</z-m>
+            </offsets>
+    </model>
+
 
 
 </PropertyList>

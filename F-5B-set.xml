@@ -10,30 +10,28 @@ P-38L  by G ROBIN
 
     <sim>
 
-        <description>P-38L Lightning</description>
+        <description>F-5B Lightning</description>
         <author>Gerard ROBIN</author>
         <status>alpha, "GPL Copyright"</status>
         <version> 0.1</version>
         <flight-model>jsb</flight-model>
         <aero>P38L-new</aero>
         <startup>
-            <splash-texture>Aircraft/P-38-Lightning/P-38L-splash.rgb</splash-texture>
+            <splash-texture>Aircraft/P-38-Lightning/F-5B-e_Splash.rgb</splash-texture>
         </startup>
 
 
         <model>
-            <path>Aircraft/P-38-Lightning/Models/P38L-model.xml</path>
+            <path>Aircraft/P-38-Lightning/Models/F5B-model.xml</path>
             <livery>
                 <material>
-                    <propdisk>
-                        <texture>texture-us/p38-prop1.rgb</texture>
-                    </propdisk>
-                    <casserolle>
-                        <texture>texture-us/casserolle-us.rgb</texture>
-                    </casserolle>
+                    <propdisk><texture>texture-fr/p38-prop1.rgb</texture></propdisk>
+                    <casserolle><texture>texture-fr/casserolle-fr.rgb</texture></casserolle>
                 </material>
             </livery>
         </model>
+
+
 
     </sim>
 

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+   <!--             Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+    <path>p38-propdisk.ac</path>
+    <texture-path>Textures</texture-path>
+
+
+    <animation>
+        <type>noshadow</type>
+        <object-name>PropDisk</object-name>
+    </animation>
+
+
+    <animation>
+            <type>material</type>
+            <!--global type="bool">true</global-->
+            <object-name>PropDisk</object-name>
+            <property-base>sim/model/livery/material/propdisk</property-base>
+            <texture-prop>texture</texture-prop>
+    </animation>
+
+
+
+
+</PropertyList>

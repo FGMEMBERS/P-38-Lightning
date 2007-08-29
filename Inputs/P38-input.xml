@@ -7,146 +7,45 @@
 <PropertyList>
 
     <keyboard>
-            <key n="100">
-                    <name>d</name>
-                    <desc>Toggle Canopy</desc>
-                    <binding>
-                            <command>property-toggle</command>
-                            <property>/fdm/jsbsim/fcs/canopy-control</property>
-                    </binding>
-            </key>
-            <key n="36">
-                    <name>$</name>
-                    <desc>Toggle engine cowling flaps</desc>
-                    <binding>
-                            <command>property-toggle</command>
-                            <property>/controls/flight/cowl-flap</property>
-                    </binding>
-            </key>
-
-            <key n="125">
-                <name>}</name>
-                <desc>Master Electric  Switch  and Increase Magneto on Selected Engine</desc>
-
+        <key n="100">
+                <name>d</name>
+                <desc>Toggle Canopy</desc>
                 <binding>
-                    <command>nasal</command>
-                    <script>controls.stepMagnetos(1)</script>
-                </binding>
-
-                <binding>  <!-- will be moved to panel specific button-->
-                        <command>property-assign</command>
-                        <property>/controls/electric/master-switch</property>
-                        <value>1</value>
-                </binding>
-        </key>
-
-        <key n="123">
-                <name>{</name>
-                <desc>Master Electric  Switch  and Increase Magneto on Selected Engine</desc>
-
-                <binding>
-                    <command>nasal</command>
-                    <script>controls.stepMagnetos(-1)</script>
-                </binding>
-
-                <binding>  <!-- will be moved to panel specific button-->
-                        <command>property-assign</command>
-                        <property>/controls/electric/master-switch</property>
-                        <value>0</value>
-                </binding>
-        </key>
-
-            <!--<key n="103">
-                    <name>g</name>
-                    <desc>Gear Up.</desc>
-                    <binding>
-                            <command>nasal</command>
-                            <script>cmd.gearcmd();</script>
-                    </binding>
-                    <mod-up>
-                    <binding>
-                            <command>nasal</command>
-                            <script>controls.gearDown(0)</script>
-                    </binding>
-                    </mod-up>
-            </key>
-            <key n="93">
-                    <name>]</name>
-                    <desc>Increase flaps</desc>
-                    <binding>
-                            <command>nasal</command>
-                            <script>cmd.flapcmd()</script>
-                    </binding>
-                    <mod-up>
-                            <binding>
-                                    <command>nasal</command>
-                                    <script>controls.flapsDown(0)</script>
-                            </binding>
-                    </mod-up>
-            </key>-->
-
-                <!--<key n="66">
-                    <name>B</name>
-                    <desc>Toggle parking brake on or off and close Canopy</desc>
-                    <binding>
                         <command>property-toggle</command>
-                        <property>/controls/gear/brake-parking</property>
-
-                    </binding>
-                    <binding>
-                        <command>property-assign</command>
-                        <property>/fdm/jsbsim/fcs/canopy-cmd-norm</property>
-                        <value>0</value>
-                    </binding>
-            </key>-->
-
-
-            <key n="60">
-                    <name>&lt;</name>
-                    <desc>Rudder Trim Left</desc>
-                    <binding>
-                            <command>property-adjust</command>
-                            <property>/controls/flight/rudder-trim</property>
-                            <min type="double">-1.0</min>
-                            <step type="double">-0.001</step>
-                    </binding>
-            </key>
-            <key n="62">
-                    <name>&gt;</name>
-                    <desc>Rudder Trim Right</desc>
-                    <binding>
-                            <command>property-adjust</command>
-                            <property>/controls/flight/rudder-trim</property>
-                            <max type="double">1.0</max>
-                            <step type="double">0.001</step>
-                    </binding>
-            </key>
-
-
-
-
-
-                <!--==================temporary unactable  the prop pitch Key===remain  Constant speed Propeller============-->
-
-        <key n="78">
-            <name>N</name>
-            <binding>
-                        <command>property-assign</command>
-                        <property>sim/model/dummy</property>
-                        <value>0</value>
-             </binding>
+                        <property>/fdm/jsbsim/fcs/canopy-control</property>
+                </binding>
         </key>
-
-        <key n="110">
-            <name>n</name>
-            <binding>
-                        <command>property-assign</command>
-                        <property>sim/model/dummy</property>
-                        <value>0</value>
-             </binding>
+        <key n="36">
+                <name>$</name>
+                <desc>Toggle engine cowling flaps</desc>
+                <binding>
+                        <command>property-toggle</command>
+                        <property>/controls/flight/cowl-flap</property>
+                </binding>
         </key>
 
 
+
+        <key n="60">
+            <name>&lt;</name>
+            <desc>Rudder Trim Left</desc>
+            <binding>
+                    <command>property-adjust</command>
+                    <property>/controls/flight/rudder-trim</property>
+                    <min type="double">-1.0</min>
+                    <step type="double">-0.001</step>
+            </binding>
+        </key>
+        <key n="62">
+            <name>&gt;</name>
+            <desc>Rudder Trim Right</desc>
+            <binding>
+                    <command>property-adjust</command>
+                    <property>/controls/flight/rudder-trim</property>
+                    <max type="double">1.0</max>
+                    <step type="double">0.001</step>
+            </binding>
+        </key>
 
   	</keyboard>
 </PropertyList>

@@ -9,7 +9,7 @@
 <PropertyList>
 
     <path>p38-cockpit.ac</path>
-    <texture-path>Textures/texture-us</texture-path>
+    <texture-path>Textures</texture-path>
 
 
 
@@ -28,9 +28,9 @@
         <name>Pilote</name>
         <path>Aircraft/P-38-Lightning/Models/P38_Pilote.xml</path>
         <offsets>
-            <x-m>0</x-m>
-            <y-m>0.0</y-m>
-            <z-m>0.0</z-m>
+            <x-m>-0.650499</x-m>
+            <y-m>-0.00692439</y-m>
+            <z-m>0.391678</z-m>
             <pitch-deg>0</pitch-deg>
         </offsets>
     </model>
@@ -41,7 +41,7 @@
         <condition>
             <not>
             <equals>
-                <property>sim/current-view/view-number</property>
+                <property>/sim/current-view/view-number</property>
                 <value>0</value>
             </equals>
             </not>
@@ -59,21 +59,10 @@
         </offsets>
     </model>
 
-    <model>
-        <name>Temoin-Train</name>
-        <path>Aircraft/P-38-Lightning/Instruments/Temoin-train.xml</path>
-        <offsets>
-            <x-m>-0.848791</x-m>
-            <y-m>-0.239104</y-m>
-            <z-m>0.173058</z-m>
-            <heading-deg>90</heading-deg>
-        </offsets>
-    </model>
-
     <animation>
         <type>rotate</type>
         <object-name>Manche</object-name>
-        <property>controls/flight/elevator</property>
+        <property>/fdm/jsbsim/fcs/elevator-cmd-norm</property>
         <factor>-10</factor>
         <center>
                 <x-m>-0.85063</x-m>
@@ -90,7 +79,7 @@
     <animation>
         <type>rotate</type>
         <object-name>Volant</object-name>
-        <property>controls/flight/elevator</property>
+        <property>/fdm/jsbsim/fcs/elevator-cmd-norm</property>
         <factor>-10</factor>
         <center>
                 <x-m>-0.85063</x-m>
@@ -107,7 +96,7 @@
     <animation>
         <type>rotate</type>
         <object-name>Volant</object-name>
-        <property>controls/flight/aileron</property>
+        <property>/fdm/jsbsim/fcs/aileron-cmd-norm</property>
         <factor>-10</factor>
         <center>
                 <x-m>0</x-m>
@@ -124,7 +113,7 @@
     <animation>
         <type>rotate</type>
         <object-name>Train-Cde</object-name>
-        <property>gear/gear[0]/position-norm</property>
+        <property>/gear/gear[0]/position-norm</property>
         <interpolation>
                 <entry>
                         <ind>0</ind>
