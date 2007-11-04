@@ -10,7 +10,7 @@ P-38L  by G ROBIN
 
     <sim>
 
-        <description>P-38L Lightning</description>
+        <description>P-38L_Lightning</description>
         <author>Gerard ROBIN</author>
         <status>alpha, "GPL Copyright"</status>
         <version> 0.1</version>
@@ -24,13 +24,14 @@ P-38L  by G ROBIN
         <model>
             <path>Aircraft/P-38-Lightning/Models/P38L-model.xml</path>
             <livery>
+                 <variant type="string">P-38L    Overlord</variant>
                 <material>
-                    <propdisk>
+                    <propdisk_tx>
                         <texture>texture-us/p38-prop1.rgb</texture>
-                    </propdisk>
-                    <casserolle>
+                    </propdisk_tx>
+                    <casserolle_tx>
                         <texture>texture-us/casserolle-us.rgb</texture>
-                    </casserolle>
+                    </casserolle_tx>
                 </material>
             </livery>
         </model>

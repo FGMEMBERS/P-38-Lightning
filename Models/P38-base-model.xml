@@ -66,7 +66,7 @@
             <and>
             <not>
             <equals>
-                <property>gear/gear[0]/position-norm</property>
+                <property>surface-positions/gear-pos-norm</property>
                 <value>0</value>
             </equals>
             </not>
@@ -352,7 +352,7 @@
         <type>rotate</type>
         <object-name>AVTrain-Porte</object-name>
         <object-name>AVTrain-Porte-Doublage</object-name>
-        <property>gear/gear[0]/position-norm</property>
+        <property>surface-positions/gear-pos-norm</property>
         <interpolation>
             <entry>
             <ind>0.0</ind>
@@ -387,7 +387,7 @@
         <type>rotate</type>
         <object-name>GTrain-DPorte</object-name>
         <object-name>GTrain-DPorte-Doublage</object-name>
-        <property>gear/gear[1]/position-norm</property>
+        <property>surface-positions/gear-pos-norm</property>
         <interpolation>
             <entry>
             <ind>0.0</ind>
@@ -420,7 +420,7 @@
         <type>rotate</type>
         <object-name>GTrain-GPorte</object-name>
         <object-name>GTrain-GPorte-Doublage</object-name>
-        <property>gear/gear[1]/position-norm</property>
+        <property>surface-positions/gear-pos-norm</property>
         <interpolation>
             <entry>
             <ind>0.0</ind>
@@ -454,7 +454,7 @@
         <type>rotate</type>
         <object-name>DTrain-DPorte</object-name>
         <object-name>DTrain-DPorte-Doublage</object-name>
-        <property>gear/gear[2]/position-norm</property>
+        <property>surface-positions/gear-pos-norm</property>
         <interpolation>
             <entry>
             <ind>0.0</ind>
@@ -487,7 +487,7 @@
         <type>rotate</type>
         <object-name>DTrain-GPorte</object-name>
         <object-name>DTrain-GPorte-Doublage</object-name>
-        <property>gear/gear[2]/position-norm</property>
+        <property>surface-positions/gear-pos-norm</property>
         <interpolation>
             <entry>
             <ind>0.0</ind>

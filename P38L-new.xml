@@ -372,6 +372,8 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
         <property>/instrumentation/lights/blinker-kinemat-out</property>
         <property>/instrumentation/lights/beacon-on</property>
         <property>/consumables/fuel/total-fuel-gals</property>
+	<property>gear/gear-cp-pos-norm</property>
+        <property>gear/gear-cp-cmd-norm</property>
 
      <channel name="Pitch">
 
@@ -512,20 +514,60 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
     </channel>
 
     <channel name="Landing Gear">
-        <kinematic name="Gear Control">
-            <input>gear/gear-cmd-norm</input>
-            <traverse>
-                <setting>
-                    <position>0</position>
-                    <time>0</time>
-                </setting>
-                <setting>
-                    <position>1</position>
-                    <time>5</time>
-                </setting>
-            </traverse>
-            <output>gear/gear-pos-norm</output>
-        </kinematic>
+            <switch name="Gear Switch">
+                <default value="/controls/gear/gear-down"/>
+                <test  logic="AND" value="0">
+                    /environment/terrain  == 0
+                    position/h-agl-ft lt 40
+                    position/h-sl-ft  lt position/h-agl-ft
+                </test>
+                <output>gear/gear-cp-cmd-norm</output>
+            </switch>
+            <kinematic name="Gear Control">
+                <input>gear/gear-cp-cmd-norm</input>
+                <traverse>
+                    <setting>
+                        <position>0</position>
+                        <time>0</time>
+                    </setting>
+                    <setting>
+                        <position>1</position>
+                        <time>0.3</time>
+                    </setting>
+                </traverse>
+                <output>gear/gear-pos-norm</output>
+            </kinematic>
+
+            <kinematic name="Gear Surface Position">
+                <input>/controls/gear/gear-down</input>
+                <traverse>
+                    <setting>
+                        <position>0</position>
+                        <time>0</time>
+                    </setting>
+                    <setting>
+                        <position>1</position>
+                        <time>5</time>
+                    </setting>
+                </traverse>
+                <output>/surface-positions/gear-pos-norm</output>
+            </kinematic>
+            <switch name="Drag Terrain Factor Switch">
+                <default value="0"/>
+                <test  logic="AND" value="1">
+                    /environment/terrain  == 1
+                    /position/altitude-agl-ft lt 7
+                    gear/gear-pos-norm == 0
+                </test>
+            </switch>
+            <switch name="Drag Gear In Water Switch">
+                <default value="0"/>
+                <test  logic="AND" value="1">
+                    /environment/terrain  == 0
+                    /position/altitude-agl-ft lt 8
+                    /surface-positions/gear-pos-norm == 1
+                </test>
+            </switch>
 <!--<documentation>Only for 3D model animation</documentation>-->
         <switch  name="Wheel Rotation Factor" >
             <default value="0"/>

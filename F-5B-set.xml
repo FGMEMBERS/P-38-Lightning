@@ -10,7 +10,7 @@ P-38L  by G ROBIN
 
     <sim>
 
-        <description>F-5B Lightning</description>
+        <description>F-5B_Lightning</description>
         <author>Gerard ROBIN</author>
         <status>alpha, "GPL Copyright"</status>
         <version> 0.1</version>
@@ -24,9 +24,14 @@ P-38L  by G ROBIN
         <model>
             <path>Aircraft/P-38-Lightning/Models/F5B-model.xml</path>
             <livery>
+                <variant type="string">F-5B St Ex</variant>
                 <material>
-                    <propdisk><texture>texture-fr/p38-prop1.rgb</texture></propdisk>
-                    <casserolle><texture>texture-fr/casserolle-fr.rgb</texture></casserolle>
+                    <propdisk_tx>
+                        <texture>texture-fr/p38-prop1.rgb</texture>
+                    </propdisk_tx>
+                    <casserolle_tx>
+                        <texture>texture-fr/casserolle-fr.rgb</texture>
+                    </casserolle_tx>
                 </material>
             </livery>
         </model>

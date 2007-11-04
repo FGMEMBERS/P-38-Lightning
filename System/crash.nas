@@ -31,7 +31,7 @@ setprop("sim/crashed",0);
 
 
 
-delay = 4;
+delay = 10;
 print ("crash detection ON: ");
 crashstart = 0;
 

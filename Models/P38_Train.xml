@@ -14,7 +14,7 @@
     <animation>
         <type>rotate</type>
         <object-name>AVTRAIN</object-name>
-        <property>gear/gear[0]/position-norm</property>
+        <property>surface-positions/gear-pos-norm</property>
         <interpolation>
             <entry>
                 <ind>0.0</ind>
@@ -48,7 +48,7 @@
     <animation>
         <type>rotate</type>
         <object-name>AVTrain-Verin</object-name>
-        <property>gear/gear[0]/position-norm</property>
+        <property>surface-positions/gear-pos-norm</property>
         <interpolation>
             <entry>
                 <ind>0.0</ind>
@@ -447,7 +447,7 @@
     <animation>
         <type>rotate</type>
         <object-name>GTRAIN</object-name>
-        <property>gear/gear[1]/position-norm</property>
+        <property>surface-positions/gear-pos-norm</property>
         <interpolation>
             <entry>
             <ind>0.0</ind>
@@ -481,7 +481,7 @@
     <animation>
         <type>rotate</type>
         <object-name>GTrain-Verin</object-name>
-        <property>gear/gear[0]/position-norm</property>
+        <property>surface-positions/gear-pos-norm</property>
         <interpolation>
             <entry>
             <ind>0.0</ind>
@@ -515,7 +515,7 @@
     <animation>
         <type>rotate</type>
         <object-name>DTRAIN</object-name>
-        <property>gear/gear[1]/position-norm</property>
+        <property>surface-positions/gear-pos-norm</property>
         <interpolation>
             <entry>
             <ind>0.0</ind>
@@ -549,7 +549,7 @@
     <animation>
         <type>rotate</type>
         <object-name>DTrain-Verin</object-name>
-        <property>gear/gear[0]/position-norm</property>
+        <property>surface-positions/gear-pos-norm</property>
         <interpolation>
             <entry>
             <ind>0.0</ind>
