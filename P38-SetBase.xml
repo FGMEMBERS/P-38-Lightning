@@ -131,7 +131,7 @@ P-38L  anf F-5B by G ROBIN
 		<file>Aircraft/P-38-Lightning/Systems/nav.nas</file>
 	</nav>
 	<terrain>
-		<file>Aircraft/F-8E-Crusader/Systems/terrain.nas</file>
+		<file>Aircraft/P-38-Lightning/Systems/terrain.nas</file>
 	</terrain>
     </nasal>
 

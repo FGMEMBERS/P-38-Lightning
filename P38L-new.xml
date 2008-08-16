@@ -361,17 +361,17 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
     </propulsion>
 
     <flight_control name="FCS: P38L">
-        <property>/engines/engine[0]/thruster/rpm</property>
-        <property>/engines/engine[1]/thruster/rpm</property>
+        <!--<property>/engines/engine[0]/thruster/rpm</property>
+        <property>/engines/engine[1]/thruster/rpm</property>-->
         <property>fcs/aileron-pos-norm</property>
-        <property>/controls/flight/cowl-flap</property>
+        <!--<property>/controls/flight/cowl-flap</property>
         <property>/surface-positions/cowl-flap-pos-norm</property>
-        <property>/surface-positions/canopy-pos-norm</property>
+        <property>/surface-positions/canopy-pos-norm</property>-->
         <property>fcs/canopy-control</property>
-        <property>/instrumentation/lights/blinker-kinemat-in</property>
+        <!--<property>/instrumentation/lights/blinker-kinemat-in</property>
         <property>/instrumentation/lights/blinker-kinemat-out</property>
         <property>/instrumentation/lights/beacon-on</property>
-        <property>/consumables/fuel/total-fuel-gals</property>
+        <property>/consumables/fuel/total-fuel-gals</property>-->
 	<property>gear/gear-cp-pos-norm</property>
         <property>gear/gear-cp-cmd-norm</property>
 
@@ -968,7 +968,7 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
             <test logic="AND" value="1">
                 gear/gear-pos-norm  == 1
                 /systems/electrical/outputs/landing-light  gt 27
-                /controls/lighting/landing-lights  == 1
+
             </test>
         </switch>
 
