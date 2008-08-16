@@ -11,7 +11,7 @@ P-38L  anf F-5B by G ROBIN
     <sim>
         <systems>
             <autopilot>
-                <path>Aircraft/P-38-Lightning/System/FA-18-autopilot.xml</path>
+                <path>Aircraft/P-38-Lightning/Systems/FA-18-autopilot.xml</path>
             </autopilot>
         </systems>
 
@@ -122,16 +122,16 @@ P-38L  anf F-5B by G ROBIN
 
     <nasal>
 	<crash>
-		<file>Aircraft/P-38-Lightning/System/crash.nas</file>
+		<file>Aircraft/P-38-Lightning/Systems/crash.nas</file>
 	</crash>
 	<electrical>
-		<file>Aircraft/P-38-Lightning/System/electrical.nas</file>
+		<file>Aircraft/P-38-Lightning/Systems/electrical.nas</file>
 	</electrical>
 	<nav>
-		<file>Aircraft/P-38-Lightning/System/nav.nas</file>
+		<file>Aircraft/P-38-Lightning/Systems/nav.nas</file>
 	</nav>
 	<terrain>
-		<file>Aircraft/P-38-Lightning/System/terrain.nas</file>
+		<file>Aircraft/F-8E-Crusader/Systems/terrain.nas</file>
 	</terrain>
     </nasal>
 
