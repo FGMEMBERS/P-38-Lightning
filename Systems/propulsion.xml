@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+
+
+<system name="Propulsion">
+
+     <channel name="Throttle">
+       <!-- <summer name="Throttle0">
+            <input>/controls/engines/engine[0]/throttle</input>
+            <clipto>
+                <min>0.2</min>
+                <max>1.0</max>
+            </clipto>
+            <output>fcs/throttle-cmd-norm</output>
+        </summer>-->
+
+        <!--throttle to 0.2.5  if starter on -->
+        <switch name="Throttle0 Starter">
+            <default value="/controls/engines/engine[0]/throttle"/>
+            <test  logic="AND" value="0.22">
+                /engines/engine[0]/starter == 1
+            </test>
+            <output>/controls/engines/engine[0]/throttle</output>
+        </switch>
+
+       <!-- <summer name="Throttle1">
+            <input>/controls/engines/engine[1]/throttle</input>
+            <clipto>
+                <min>0.2</min>
+                <max>1.0</max>
+            </clipto>
+            <output>fcs/throttle-cmd-norm[1]</output>
+        </summer>-->
+
+        <switch name="Throttle1 Starter">
+            <default value="/controls/engines/engine[1]/throttle"/>
+            <test  logic="AND" value="0.22">
+                /engines/engine[1]/starter == 1
+            </test>
+            <output>/controls/engines/engine[1]/throttle</output>
+        </switch>
+
+        <switch name="Supercharger Engage">
+                <default value="0"/>
+                <test  logic="OR" value="1">
+                   /controls/engines/engine[0]/throttle  gt 0.98
+                   /controls/engines/engine[1]/throttle  gt 0.98
+                </test>
+                <test  logic="AND" value="1">
+                   fcs/supercharger-engage  == 1
+                </test>
+        </switch>
+
+        <kinematic name="Supercharger Throttle Control">
+            <input>fcs/supercharger-engage</input>
+            <traverse>
+            <setting>
+                <position>0 </position>
+                <time>     0 </time>
+            </setting>
+            <setting>
+                <position> 1</position>
+                <time>     300 </time>
+            </setting>
+            </traverse>
+        </kinematic>
+
+        <!--<pure_gain name="Throttle0 Cmd Norm">
+            <input>fcs/throttle-cmd-norm[0]</input>
+            <gain>1</gain>
+        </pure_gain>-->
+
+        <switch name="Supercharger Throttle0">
+            <default value="/controls/engines/engine[0]throttle"/>
+            <test  logic="AND" value="0.98">
+                fcs/supercharger-throttle-control == 1
+            </test>
+            <output>/controls/engines/engine[0]throttle</output>
+        </switch>
+
+        <!--<pure_gain name="Throttle1 Cmd Norm">
+            <input>fcs/throttle-cmd-norm[1]</input>
+            <gain>1</gain>
+        </pure_gain>-->
+
+        <switch name="Supercharger Throttle1">
+            <default value="/controls/engines/engine[1]throttle"/>
+            <test  logic="AND" value="0.98">
+                fcs/supercharger-throttle-control == 1
+            </test>
+            <output>/controls/engines/engine[1]throttle</output>
+        </switch>
+    </channel>
+
+
+    <channel name="Differential Throttle Cmd">
+
+            <switch name="fcs/differential-throttle-pos-norm">
+                <default value="0"/>
+                <test  logic="AND" value="/controls/flight/rudder">
+                    /gear/gear[0]/wow == 1
+                    gear/gear-pos-norm == 1
+                    velocities/vc-kts lt 30
+                    position/h-agl-ft lt 7
+                    /controls/engines/engine[0]/throttle lt 0.40
+                    /controls/engines/engine[1]/throttle lt 0.40
+                </test>
+            </switch>
+
+            <pure_gain name="Differential Throttle Left Pos Norm">
+                <input>fcs/differential-throttle-pos-norm</input>
+                <gain>1</gain>
+            </pure_gain>
+
+            <pure_gain name="Differential Throttle Right Pos Norm">
+                <input>fcs/differential-throttle-pos-norm</input>
+                <gain>-1</gain>
+            </pure_gain>
+
+            <summer name="Throttle0 Range">
+                <input>/controls/engines/engine[0]/throttle</input>
+                <input>fcs/differential-throttle-left-pos-norm</input>
+                <clipto>
+                    <min>0.2</min>
+                    <max>1.0</max>
+                </clipto>
+                <output>fcs/throttle-cmd-norm[0]</output>
+            </summer>
+
+            <summer name="Throttle1 Range">
+                <input>/controls/engines/engine[1]/throttle</input>
+                <input>fcs/differential-throttle-right-pos-norm</input>
+                <clipto>
+                    <min>0.2</min>
+                    <max>1.0</max>
+                </clipto>
+                <output>fcs/throttle-cmd-norm[1]</output>
+            </summer>
+        </channel>
+
+<documentation>unactable  the prop pitch Key===remains  Constant speed Propeller</documentation>
+    <channel name="Propeller">
+        <summer name="Propeller0 Pitch Cmd">
+            <input>/controls/engines/engine[0]/propeller-pitch</input>
+            <clipto>
+                <min> 1 </min>
+                <max> 1 </max>
+            </clipto>
+            <output>/controls/engines/engine[0]/propeller-pitch</output>
+        </summer>
+
+        <summer name="Propeller1 Pitch Cmd">
+            <input>/controls/engines/engine[1]/propeller-pitch</input>
+            <clipto>
+                <min> 1 </min>
+                <max> 1 </max>
+            </clipto>
+            <output>/controls/engines/engine[1]/propeller-pitch</output>
+        </summer>
+<!--<documentation>Only for 3D model animation</documentation>-->
+        <scheduled_gain name="Propeller0 Rotation">
+            <input>/engines/engine[0]/thruster/rpm</input>
+            <table>
+                <independentVar>/engines/engine[0]/thruster/rpm</independentVar>
+                <tableData>
+                    0.0000	1.0000
+                    1500	0.009
+                </tableData>
+            </table>
+        </scheduled_gain>
+<!--<documentation>Only for 3D model animation</documentation>-->
+        <scheduled_gain name="Propeller1 Rotation">
+            <input>/engines/engine[1]/thruster/rpm</input>
+            <table>
+                <independentVar>/engines/engine[1]/thruster/rpm</independentVar>
+                <tableData>
+                    0.0000	1.0000
+                    1500	0.009
+                </tableData>
+            </table>
+        </scheduled_gain>
+    </channel>
+
+
+
+
+</system>
