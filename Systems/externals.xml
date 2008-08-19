@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+
+<system name="External Components">
+
+    <property>fcs/canopy-control</property>
+
+    <channel name="Externals">
+        <switch name="Canopy Cmd Norm">
+                <default value="0"/>
+                <test  logic="AND" value="1">
+                    /controls/gear/brake-parking == 1
+                    fcs/canopy-control == 1
+                </test>
+        </switch>
+
+
+        <kinematic name="Canopy">
+            <input>fcs/canopy-cmd-norm</input>
+            <traverse>
+                <setting>
+                    <position>0</position>
+                    <time>0</time>
+                </setting>
+                <setting>
+                    <position>1</position>
+                    <time>5</time>
+                </setting>
+            </traverse>
+        </kinematic>
+
+        <pure_gain name="Canopy Pos Norm">
+            <input>fcs/canopy</input>
+            <gain>1</gain>
+            <output>/surface-positions/canopy-pos-norm</output>
+        </pure_gain>
+
+        <switch name="Cowl Flap Cmd Norm">
+                <default value="0"/>
+                <test  logic="OR" value="1">
+                    /gear/gear[0]/wow gt 0
+                    /gear/gear[1]/wow gt 0
+                    /gear/gear[2]/wow gt 0
+                </test>
+                <test  logic="AND" value="1">
+                    /controls/flight/cowl-flap == 1
+                </test>
+        </switch>
+
+        <kinematic name="Cowl Flap Control">
+            <input>fcs/cowl-flap-cmd-norm</input>
+            <traverse>
+                    <setting>
+                            <position>0</position>
+                            <time>0</time>
+                    </setting>
+                    <setting>
+                            <position>1</position>
+                            <time>2</time>
+                    </setting>
+            </traverse>
+            <output>/surface-positions/cowl-flap-pos-norm</output>
+        </kinematic>
+
+
+     </channel>
+
+
+
+
+</system>
