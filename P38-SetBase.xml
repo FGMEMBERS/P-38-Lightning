@@ -46,6 +46,20 @@ P-38L  anf F-5B by G ROBIN
                 <setting>1</setting>
         </flaps>
 
+        <multiplay>
+            <generic>
+                    <float n="0" alias="/surface-positions/gear-pos-norm"/>
+                    <float n="1" alias="/gear/gear[0]/steering-norm"/>
+                    <float n="2" alias="/surface-positions/canopy-pos-norm"/>
+                    <float n="3" alias="/engines/engine[0]/thruster/rpm"/>
+                    <float n="4" alias="/engines/engine[1]/thruster/rpm"/>
+                    <float n="5" alias="/fdm/jsbsim/fcs/propeller0-rotation"/>
+                    <float n="6" alias="/fdm/jsbsim/fcs/propeller1-rotation"/>
+                    <float n="7" alias="/surface-positions/cowl-flap-pos-norm"/>
+                    <string n="0"></string>
+            </generic>
+        </multiplay>
+
         <help include="Help/P-38L-help.xml"/>
 
     </sim>
