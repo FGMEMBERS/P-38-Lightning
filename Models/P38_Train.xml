@@ -10,11 +10,18 @@
 
     <path>p38-train-complet.ac</path>
     <texture-path>Textures</texture-path>
+    
+    
+   <!-- MP Animation :
+    <property>sim/multiplay/generic/float[0]</property>
+     instead of
+     <property>surface-positions/gear-pos-norm</property>-->
+    
 
     <animation>
         <type>rotate</type>
         <object-name>AVTRAIN</object-name>
-        <property>surface-positions/gear-pos-norm</property>
+        <property>sim/multiplay/generic/float[0]</property>
         <interpolation>
             <entry>
                 <ind>0.0</ind>
@@ -48,7 +55,7 @@
     <animation>
         <type>rotate</type>
         <object-name>AVTrain-Verin</object-name>
-        <property>surface-positions/gear-pos-norm</property>
+        <property>sim/multiplay/generic/float[0]</property>
         <interpolation>
             <entry>
                 <ind>0.0</ind>
@@ -447,7 +454,7 @@
     <animation>
         <type>rotate</type>
         <object-name>GTRAIN</object-name>
-        <property>surface-positions/gear-pos-norm</property>
+        <property>sim/multiplay/generic/float[0]</property>
         <interpolation>
             <entry>
             <ind>0.0</ind>
@@ -481,7 +488,7 @@
     <animation>
         <type>rotate</type>
         <object-name>GTrain-Verin</object-name>
-        <property>surface-positions/gear-pos-norm</property>
+        <property>sim/multiplay/generic/float[0]</property>
         <interpolation>
             <entry>
             <ind>0.0</ind>
@@ -515,7 +522,7 @@
     <animation>
         <type>rotate</type>
         <object-name>DTRAIN</object-name>
-        <property>surface-positions/gear-pos-norm</property>
+        <property>sim/multiplay/generic/float[0]</property>
         <interpolation>
             <entry>
             <ind>0.0</ind>
@@ -549,7 +556,7 @@
     <animation>
         <type>rotate</type>
         <object-name>DTrain-Verin</object-name>
-        <property>surface-positions/gear-pos-norm</property>
+        <property>sim/multiplay/generic/float[0]</property>
         <interpolation>
             <entry>
             <ind>0.0</ind>

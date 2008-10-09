@@ -66,7 +66,8 @@
             <and>
             <not>
             <equals>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
+                <!--<property>surface-positions/gear-pos-norm</property>-->
                 <value>0</value>
             </equals>
             </not>
@@ -87,7 +88,8 @@
     <animation>
         <type>rotate</type>
         <object-name>Canopy</object-name>
-        <property>surface-positions/canopy-pos-norm</property>
+        <property>sim/multiplay/generic/float[2]</property>
+       <!-- <property>surface-positions/canopy-pos-norm</property>-->
         <interpolation>
         <entry>
             <ind>0</ind>

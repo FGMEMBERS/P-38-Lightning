@@ -39,7 +39,7 @@
         <object-name>CasserolleHD</object-name>
         <condition>
                 <less-than>
-                <property>engines/engine[1]/thruster/rpm</property>
+                    <property>sim/multiplay/generic/float[4]</property> <!--engines/engine[1]/thruster/rpm-->
                 <value>1300</value>
                 </less-than>
         </condition>
@@ -50,7 +50,7 @@
         <type>spin</type>
         <object-name>HeliceD</object-name>
         <object-name>CasserolleHD</object-name>
-        <property>engines/engine[1]/thruster/rpm</property>
+        <property>sim/multiplay/generic/float[4]</property>  <!--engines/engine[1]/thruster/rpm-->
         <factor>-0.100</factor>
         <center>
                 <x-m>0</x-m>
@@ -91,7 +91,8 @@
         <object-name>CasserollePropdiskD</object-name>
         <condition>
                 <greater-than>
-                <property>engines/engine[0]/thruster/rpm</property>
+                    <property>sim/multiplay/generic/float[4]</property>
+                <!--<property>engines/engine[1]/thruster/rpm</property>-->
                 <value>850</value>
                 </greater-than>
         </condition>
@@ -102,7 +103,8 @@
         <object-name>PropDiskD</object-name>
         <condition>
                 <greater-than>
-                <property>engines/engine[0]/thruster/rpm</property>
+                    <!--<property>sim/multiplay/generic/float[4]</property>-->
+                <property>engines/engine[1]/thruster/rpm</property>
                 <value>850</value>
                 </greater-than>
         </condition>
@@ -111,7 +113,8 @@
     <animation>
         <type>spin</type>
         <object-name>CasserollePropdiskD</object-name>
-        <property>fdm/jsbsim/fcs/propeller1-rotation</property>
+        <property>sim/multiplay/generic/float[6]</property>
+       <!-- <property>fdm/jsbsim/fcs/propeller1-rotation</property>-->
         <factor>-1</factor>
         <center>
             <x-m>0</x-m>
@@ -128,7 +131,8 @@
      <animation>
         <type>spin</type>
         <object-name>PropDiskD</object-name>
-        <property>fdm/jsbsim/fcs/propeller1-rotation</property>
+        <property>sim/multiplay/generic/float[6]</property>
+        <!--<property>fdm/jsbsim/fcs/propeller1-rotation</property>-->
         <factor>-1</factor>
         <center>
             <x-m>0</x-m>
