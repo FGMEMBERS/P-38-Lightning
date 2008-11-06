@@ -11,21 +11,21 @@
     <minmp unit="INHG">          6.0 </minmp>
     <maxmp unit="INHG">         40.0 </maxmp>
     <displacement unit="IN3"> 1710</displacement>
-    <bsfc> 0.35 </bsfc>
+    <bsfc> 0.31 </bsfc>
     <maxhp>        1600 </maxhp>
     <cycles>         2.0 </cycles>
     <idlerpm>      600.0 </idlerpm>
     <maxthrottle>    1.0 </maxthrottle>
     <minthrottle>    0.1</minthrottle>
-    <boostoverride>8</boostoverride><!--must be Fixed-->
+    <boostoverride>0</boostoverride>
     <numboostspeeds>2</numboostspeeds>
-    <takeoffboost>8</takeoffboost>  <!--hmm, probablement trop élevé   certainly  too high ?-->
-    <ratedboost1>4</ratedboost1>          <!--must be Fixed-->
+    <takeoffboost>6</takeoffboost>  <!--hmm,   certainly  too high ?-->
+    <ratedboost1>3</ratedboost1>          <!--must be Fixed-->
     <ratedpower1>1600</ratedpower1> <!--must be Fixed-->
     <ratedrpm1>2600</ratedrpm1><!--must be Fixed-->
-    <ratedatitude1>7000</ratedatitude1><!--must be Fixed-->
-    <ratedboost2>9</ratedboost2><!--must be Fixed-->
+    <ratedaltitude1>12000</ratedaltitude1><!--must be Fixed-->
+    <ratedboost2>3</ratedboost2><!--must be Fixed-->
     <ratedpower2>1600</ratedpower2><!--must be Fixed-->
     <ratedrpm2>2600</ratedrpm2><!--must be Fixed-->
-    <ratedatitude2>21000</ratedatitude2><!--must be Fixed-->
+    <ratedaltitude2>23000</ratedaltitude2><!--must be Fixed-->
 </piston_engine>
