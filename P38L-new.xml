@@ -366,6 +366,7 @@ either 2x 2,000 lb (908 kg) or 2x 1,000 lb (454 kg), 4x 500 lb (227 kg) or 4x 25
     <system file="externals"/>
     <system file="electrical"/>
     <system file="consummables"/>
+    <system file="mixture-control"/>
 
 
     <flight_control name="FCS: P38L">

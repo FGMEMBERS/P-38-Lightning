@@ -18,6 +18,7 @@ P-38L  anf F-5B by G ROBIN
         <sound>
                 <path>Aircraft/P-38-Lightning/Sounds/p38-sound.xml</path>
         </sound>
+        <flaps><current-setting>0</current-setting></flaps>
 
         <view>
             <internal archive="y">true</internal>

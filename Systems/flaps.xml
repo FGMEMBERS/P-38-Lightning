@@ -3,7 +3,7 @@
 
 <system name="">
     
-    <property>/sim/flaps/current-setting</property>
+    
     <property>/sim/flaps/setting</property> 
     <property>/sim/flaps/setting[1]</property>
     <property>/sim/flaps/setting[2]</property>
