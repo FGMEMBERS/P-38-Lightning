@@ -161,6 +161,7 @@
                 <independentVar>/engines/engine[0]/thruster/rpm</independentVar>
                 <tableData>
                     0.0000	1.0000
+                    0600    0.300
                     1500	0.009
                 </tableData>
             </table>
@@ -172,6 +173,7 @@
                 <independentVar>/engines/engine[1]/thruster/rpm</independentVar>
                 <tableData>
                     0.0000	1.0000
+                    0600     0.300
                     1500	0.009
                 </tableData>
             </table>

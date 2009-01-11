@@ -128,9 +128,6 @@ P-38L  anf F-5B by G ROBIN
     </fcs></jsbsim></fdm>
 
     <nasal>
-	<crash>
-		<file>Aircraft/P-38-Lightning/Systems/crash.nas</file>
-	</crash>
 	<electrical>
 		<file>Aircraft/P-38-Lightning/Systems/electrical.nas</file>
 	</electrical>

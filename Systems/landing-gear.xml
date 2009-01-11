@@ -14,23 +14,27 @@
                     position/h-agl-ft lt 40
                     position/h-sl-ft  lt position/h-agl-ft
                 </test>
-                <output>gear/gear-cp-cmd-norm</output>
+                <output>gear/gear-cmd-norm</output>
             </switch>
-            <kinematic name="Gear Control">
-                <input>gear/gear-cp-cmd-norm</input>
-                <traverse>
-                    <setting>
-                        <position>0</position>
-                        <time>0</time>
-                    </setting>
-                    <setting>
-                        <position>1</position>
-                        <time>0.3</time>
-                    </setting>
-                </traverse>
-                <output>gear/gear-pos-norm</output>
-            </kinematic>
-
+            
+            <!--point de contact-->
+            <actuator name="Gear Nose Actuator">
+                <input>gear/gear-cmd-norm</input>
+                <rate_limit>0.2</rate_limit>
+                <output>gear/unit[0]/pos-norm</output>
+            </actuator>
+            <actuator name="Gear Left Actuator">
+                <input>gear/gear-cmd-norm</input>
+                <rate_limit>0.2</rate_limit>
+                <output>gear/unit[1]/pos-norm</output>
+            </actuator>
+            <actuator name="Gear Right Actuator">
+                <input>gear/gear-cmd-norm</input>
+                <rate_limit>0.2</rate_limit>
+                <output>gear/unit[2]/pos-norm</output>
+            </actuator>
+           
+               <!--visuel-->
             <kinematic name="Gear Surface Position">
                 <input>/controls/gear/gear-down</input>
                 <traverse>
