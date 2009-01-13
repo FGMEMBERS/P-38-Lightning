@@ -51,7 +51,7 @@
         <object-name>HeliceG</object-name>
         <object-name>CasserolleHG</object-name>
         <property>sim/multiplay/generic/float[3]</property>  <!-- engines/engine[0]/thruster/rpm-->
-        <factor>0.105</factor>
+        <factor>0.505</factor>
         <center>
                 <x-m>0</x-m>
                 <y-m>-0.0</y-m>
@@ -104,8 +104,8 @@
         <object-name>PropDiskG</object-name>
         <condition>
                 <greater-than>
-                   <!-- <property>sim/multiplay/generic/float[3]</property>-->
-                <property>engines/engine[0]/thruster/rpm</property>
+                    <property>sim/multiplay/generic/float[3]</property>
+                <!--<property>engines/engine[0]/thruster/rpm</property>-->
                 <value>850</value>
                 </greater-than>
         </condition>
