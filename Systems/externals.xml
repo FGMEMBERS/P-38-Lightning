@@ -3,7 +3,7 @@
 
 <system name="External Components">
 
-    <property>fcs/canopy-control</property>
+    <property>/controls/flight/cowl-flap</property>
 
     <channel name="Externals">
         <switch name="Canopy Cmd Norm">

@@ -2,11 +2,11 @@
 
 
 <system name="">
-    
+
     <property value="1">propulsion/ctl_mixture</property>
-    
+
     <channel name="Mixture Control">
-        
+
         <scheduled_gain name="propulsion/mixture-value">
             <input>propulsion/ctl_mixture</input>
             <table>
@@ -25,8 +25,8 @@
             </table>
             <output>/controls/engines/engine[0]/mixture</output>
         </scheduled_gain>
-        
-        <scheduled_gain name="propulsion/mixture-value">
+
+        <scheduled_gain name="propulsion/mixture-value2">
             <input>propulsion/ctl_mixture</input>
             <table>
                 <independentVar>position/h-sl-ft</independentVar>
@@ -44,7 +44,7 @@
             </table>
             <output>/controls/engines/engine[1]/mixture</output>
         </scheduled_gain>
-        
+
     </channel>
-    
+
 </system>

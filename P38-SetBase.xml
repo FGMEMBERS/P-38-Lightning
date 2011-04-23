@@ -70,6 +70,7 @@ P-38L  anf F-5B by G ROBIN
     <controls>
         <gear>
             <brake-parking type="double">1.0</brake-parking>
+            <gear-down>true</gear-down>
         </gear>
         <switches>
             <landing-light>true</landing-light>

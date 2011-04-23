@@ -3,6 +3,11 @@
 
 <system name="Electrical">
 
+    <property>/systems/electrical/outputs/instrument-lights</property>
+    <property>/instrumentation/lights/blinker-kinemat-in</property>
+    <property>/instrumentation/lights/blinker-kinemat-out</property>
+    <property>/systems/electrical/outputs/landing-light</property>
+
     <channel name="Electric Master">
         <summer name="Electric Master Switch">
             <input>/controls/electric/master-switch</input>

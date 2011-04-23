@@ -3,6 +3,9 @@
 
 <system name="Propulsion">
 
+     <property>/engines/engine[0]/starter</property>
+     <property>/engines/engine[1]/starter</property>
+
      <channel name="Throttle">
        <!-- <summer name="Throttle0">
             <input>/controls/engines/engine[0]/throttle</input>
@@ -14,6 +17,8 @@
         </summer>-->
 
         <!--throttle to 0.2.5  if starter on -->
+
+        <!--
         <switch name="Throttle0 Starter">
             <default value="/controls/engines/engine[0]/throttle"/>
             <test  logic="AND" value="0.22">
@@ -21,6 +26,7 @@
             </test>
             <output>/controls/engines/engine[0]/throttle</output>
         </switch>
+        -->
 
        <!-- <summer name="Throttle1">
             <input>/controls/engines/engine[1]/throttle</input>
@@ -31,6 +37,8 @@
             <output>fcs/throttle-cmd-norm[1]</output>
         </summer>-->
 
+        <!--
+
         <switch name="Throttle1 Starter">
             <default value="/controls/engines/engine[1]/throttle"/>
             <test  logic="AND" value="0.22">
@@ -39,13 +47,15 @@
             <output>/controls/engines/engine[1]/throttle</output>
         </switch>
 
+        -->
+
         <switch name="Supercharger Engage">
                 <default value="0"/>
                 <test  logic="OR" value="1">
                    /controls/engines/engine[0]/throttle  gt 0.98
                    /controls/engines/engine[1]/throttle  gt 0.98
                 </test>
-                
+
         </switch>
 
         <kinematic name="Supercharger Throttle Control">
