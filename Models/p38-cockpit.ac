@@ -1,17 +1,17 @@
 AC3Db
-MATERIAL "ac3dmat0" rgb 0 0 0  amb 0.2 0.2 0.2  emis 0 0 0  spec 0 0 0  shi 10  trans 0
-MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0 0 0  shi 10  trans 0
-MATERIAL "ac3dmat3" rgb 1 0 0  amb 0.2 0.2 0.2  emis 0 0 0  spec 0 0 0  shi 10  trans 0
-MATERIAL "ac3dmat0" rgb 0.145 0.129 0.18  amb 0.2 0.2 0.2  emis 0 0 0  spec 0 0 0  shi 0  trans 0
-MATERIAL "ac3dmat1" rgb 1 1 1  amb 0 0 0  emis 0 0 0  spec 0 0 0  shi 10  trans 0
+MATERIAL "ac3dmat0" rgb 0 0 0  amb 0 0 0  emis 0 0 0  spec 0 0 0  shi 10  trans 0
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0 0 0  shi 10  trans 0
+MATERIAL "ac3dmat3" rgb 1 0 0  amb 1 0 0  emis 0 0 0  spec 0 0 0  shi 10  trans 0
+MATERIAL "ac3dmat0" rgb 0.145 0.129 0.18  amb 0.145 0.129 0.18  emis 0 0 0  spec 0 0 0  shi 0  trans 0
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0 0 0  shi 10  trans 0
 MATERIAL "ac3dmat1" rgb 0.302 0.404 0.404  amb 0.302 0.404 0.404  emis 0 0 0  spec 0.62 0.647 0.733  shi 125  trans 0
-MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.502 0.502 0.502  shi 116  trans 0
-MATERIAL "ac3dmat12" rgb 0.063 0.094 0.157  amb 0.2 0.2 0.2  emis 0 0 0  spec 0 0 0  shi 10  trans 0
-MATERIAL "ac3dmat1" rgb 0.129 0.129 0.125  amb 0.2 0.2 0.2  emis 0 0 0  spec 0 0 0  shi 10  trans 0
-MATERIAL "NoName" rgb 0.416 0.416 0.416  amb 0.592 0.612 0.718  emis 0 0 0  spec 0.314 0.31 0.408  shi 52  trans 0
-MATERIAL "ac3dmat0" rgb 0 0 0  amb 0.2 0.2 0.2  emis 0 0 0  spec 0 0 0  shi 82  trans 0
-MATERIAL "ac3dmat1" rgb 0.333 0.345 0.349  amb 0.431 0.447 0.443  emis 0 0 0  spec 0.102 0.11 0.122  shi 128  trans 0
-MATERIAL "ac3dmat1" rgb 0.251 0.271 0.302  amb 0.431 0.447 0.443  emis 0 0 0  spec 0 0 0  shi 128  trans 0
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.502 0.502 0.502  shi 116  trans 0
+MATERIAL "ac3dmat12" rgb 0.063 0.094 0.157  amb 0.063 0.094 0.157  emis 0 0 0  spec 0 0 0  shi 10  trans 0
+MATERIAL "ac3dmat1" rgb 0.129 0.129 0.125  amb 0.129 0.129 0.125  emis 0 0 0  spec 0 0 0  shi 10  trans 0
+MATERIAL "NoName" rgb 0.416 0.416 0.416  amb 0.416 0.416 0.416  emis 0 0 0  spec 0.314 0.31 0.408  shi 52  trans 0
+MATERIAL "ac3dmat0" rgb 0 0 0  amb 0 0 0  emis 0 0 0  spec 0 0 0  shi 82  trans 0
+MATERIAL "ac3dmat1" rgb 0.333 0.345 0.349  amb 0.333 0.345 0.349  emis 0 0 0  spec 0.102 0.11 0.122  shi 128  trans 0
+MATERIAL "ac3dmat1" rgb 0.251 0.271 0.302  amb 0.251 0.271 0.302  emis 0 0 0  spec 0 0 0  shi 128  trans 0
 OBJECT world
 kids 16
 OBJECT group
