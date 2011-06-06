@@ -20,9 +20,9 @@
                 <desc>Toggle Radiators doors</desc>
         </key>
         <line>========Start Routine=========</line>
-        <line>Set the Magneto On Both(depress "}" key, thrice )</line>
+        <line>Set magnetos to "both" (press "}" key, thrice)</line>
         <line>Engine mixture set to 1.00</line>
-        <line>Activate the Starter (depress "space bar"</line>
+        <line>Full throttle and activate starter (press "s").</line>
         <line></line>
         <line>=====Take Off ====</line>
         <line>Flaps  15 degrees, ( key "] "  twice ) release the parking break, push the throttle</line>
