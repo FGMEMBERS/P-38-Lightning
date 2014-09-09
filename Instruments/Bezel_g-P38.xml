@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+<PropertyList>
+
+    <path>Models/bezel_g-p38.ac</path>
+    <texture-path>Models/Textures</texture-path>
+
+
+
+    <animation include="Instrument-Light5.xml">
+        <object-name>Couronne</object-name>
+    </animation>
+
+
+
+</PropertyList>

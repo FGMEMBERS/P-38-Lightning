@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+P-38L  by G ROBIN
+
+************************************************************************
+-->
+
+<PropertyList include="P38-SetBase.xml">
+
+    <sim>
+
+        <description>P-38L_Lightning</description>
+        <author>Gerard ROBIN</author>
+        <status>alpha, "GPL Copyright"</status>
+        <version> 0.1</version>
+        <flight-model>jsb</flight-model>
+        <aero>P38L-new</aero>
+        <startup>
+            <splash-texture>Aircraft/P-38-Lightning/P-38L-splash.rgb</splash-texture>
+        </startup>
+
+
+        <model>
+            <path>Aircraft/P-38-Lightning/Models/P38L-model.xml</path>
+            <livery>
+                 <variant type="string">P-38L    Overlord</variant>
+                <material>
+                    <propdisk_tx>
+                        <texture>texture-us/p38-prop1.rgb</texture>
+                    </propdisk_tx>
+                    <casserolle_tx>
+                        <texture>texture-us/casserolle-us.rgb</texture>
+                    </casserolle_tx>
+                </material>
+            </livery>
+        </model>
+
+    </sim>
+
+
+
+
+</PropertyList>

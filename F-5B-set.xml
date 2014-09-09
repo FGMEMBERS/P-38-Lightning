@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+P-38L  by G ROBIN
+
+************************************************************************
+-->
+
+<PropertyList include="P38-SetBase.xml">
+
+    <sim>
+
+        <description>F-5B_Lightning</description>
+        <author>Gerard ROBIN</author>
+        <status>alpha, "GPL Copyright"</status>
+        <version> 0.1</version>
+        <flight-model>jsb</flight-model>
+        <aero>P38L-new</aero>
+        <startup>
+            <splash-texture>Aircraft/P-38-Lightning/F-5B-e_Splash.rgb</splash-texture>
+        </startup>
+
+
+        <model>
+            <path>Aircraft/P-38-Lightning/Models/F5B-model.xml</path>
+            <livery>
+                <variant type="string">F-5B St Ex</variant>
+                <material>
+                    <propdisk_tx>
+                        <texture>texture-fr/p38-prop1.rgb</texture>
+                    </propdisk_tx>
+                    <casserolle_tx>
+                        <texture>texture-fr/casserolle-fr.rgb</texture>
+                    </casserolle_tx>
+                </material>
+            </livery>
+        </model>
+
+
+
+    </sim>
+
+
+
+
+</PropertyList>

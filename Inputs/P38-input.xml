@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+<PropertyList>
+
+    <keyboard>
+        <key n="100">
+                <name>d</name>
+                <desc>Toggle Canopy</desc>
+                <binding>
+                        <command>property-toggle</command>
+                        <property>/fdm/jsbsim/fcs/canopy-control</property>
+                </binding>
+        </key>
+        <key n="36">
+                <name>$</name>
+                <desc>Toggle engine cowling flaps</desc>
+                <binding>
+                        <command>property-toggle</command>
+                        <property>/controls/flight/cowl-flap</property>
+                </binding>
+        </key>
+
+
+
+        <key n="60">
+            <name>&lt;</name>
+            <desc>Rudder Trim Left</desc>
+            <binding>
+                    <command>property-adjust</command>
+                    <property>/controls/flight/rudder-trim</property>
+                    <min type="double">-1.0</min>
+                    <step type="double">-0.001</step>
+            </binding>
+        </key>
+        <key n="62">
+            <name>&gt;</name>
+            <desc>Rudder Trim Right</desc>
+            <binding>
+                    <command>property-adjust</command>
+                    <property>/controls/flight/rudder-trim</property>
+                    <max type="double">1.0</max>
+                    <step type="double">0.001</step>
+            </binding>
+        </key>
+
+  	</keyboard>
+</PropertyList>

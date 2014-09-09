@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+    Model  	V-1710 G6R/L (V-1710-143/-145)
+    Bore x Stroke 	5.5" x 6.0"
+    Compression Ratio 	6.00:1
+    
+    Supercharger Ratio 	7.48 engine stage, 8.087 (R) and 8.03 (L) auxiliary stage
+    Anti-detonation 	50:50 water-methanol injection anti-detonation injection (ADI)
+    Power 	2,250 hp war emergency rating (WER) at 3,200 RPM & 101" Hg (35 psig) boost "wet" (w/ADI) and 115/145 PN fuel
+    Performance 	325 psi BMEP (brake mean effective pressure)
+    Max. Piston Speed: 	3,200 ft/min
+
+    The auxiliary stage  is intended to provide a critical altitude of 25,000 ft by delivering air to the engine supercharger at pressures close to sea-level when at critical altitude.  
+    This requires large volume of  low density air to be handled  because of the density of the air at 25,000 ft the supercharger must move 2.23 times more air volume than the engine supercharger, and compress the air to about 2.7 times to deliver sea-level conditions.  The auxiliary stage drive was obtained by a power-takeoff from the starter gear .
+    The auxiliary supercharger consumes 490 hp from the crankshaft at the 2250 hp WER rating.
+-->
+<!--FIXME supercharger values are wrong, but working with the existing source code-->
+
+<piston_engine name="Allison">
+    <injected>1</injected>
+    <minmp unit="INHG">          6.0 </minmp>
+    <maxmp unit="INHG">         35.2.0 </maxmp>
+    <displacement unit="IN3"> 1710</displacement>
+    <bsfc>0.315</bsfc>
+    <maxhp>        1600 </maxhp>
+    <cycles>         2.0 </cycles>
+    <idlerpm>      600.0 </idlerpm>
+    <maxthrottle>    1.0 </maxthrottle>
+    <minthrottle>    0.15</minthrottle>
+    <numboostspeeds>   2</numboostspeeds>
+    <takeoffboost>10.3</takeoffboost>
+    <!-- <boostoverride>  8 </boostoverride>-->
+    <ratedboost1>2.5</ratedboost1>          
+    <ratedpower1>1600</ratedpower1> 
+    <ratedrpm1>2450</ratedrpm1>
+    <ratedaltitude1>10000</ratedaltitude1>
+    <ratedboost2>2.5</ratedboost2>          
+    <ratedpower2>1600</ratedpower2> 
+    <ratedrpm2>2450</ratedrpm2>
+    <ratedaltitude2>20000</ratedaltitude2>
+    
+</piston_engine>

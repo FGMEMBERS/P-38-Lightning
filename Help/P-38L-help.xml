@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+<PropertyList>
+
+        <title>P-38L  Lightning</title>
+        <key>
+                <name>d</name>
+                <desc>Toggle Canopy</desc>
+        </key>
+        <key>
+                <name>Space </name>
+                <desc>Start the Engine</desc>
+        </key>
+        <key>
+                <name>$</name>
+                <desc>Toggle Radiators doors</desc>
+        </key>
+        <line>========Start Routine=========</line>
+        <line>Set magnetos to "both" (press "}" key, thrice)</line>
+        <line>Engine mixture set to 1.00</line>
+        <line>Full throttle and activate starter (press "s").</line>
+        <line></line>
+        <line>=====Take Off ====</line>
+        <line>Flaps  15 degrees, ( key "] "  twice ) release the parking break, push the throttle</line>
+        <line>If you need , you may use the takeoff boost, which is activated to 0.99 or 1 (throttle values are from 0 to 1)</line>
+        <line></line>
+        <line>===========Radiators Doors==========</line>
+        <line>Radiators doors are automatically opened when the P-38L is on the ground</line>
+        <line>After take off, you may close it ("$" key)</line>
+        <line>During landing they will open automatically again</line>
+        <line>===========Engine Mixture==========</line>
+        <line>after takeoff the engine mixture value must be 0.69 </line>
+        <line></line>
+
+</PropertyList>

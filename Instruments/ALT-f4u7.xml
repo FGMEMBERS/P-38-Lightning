@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+
+<PropertyList>
+
+ <path>Models/alt-f4u7-n.ac</path>
+ <texture-path>Models/Textures</texture-path>
+
+    <model>
+        <name>BoutonG</name>
+        <path>Aircraft/P-38-Lightning/Instruments/Bouton_pt-Nord.xml</path>
+        <offsets>
+                <x-m>0.0060</x-m>
+                <y-m>-0.0340</y-m>
+                <z-m>-0.0340</z-m>
+                <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+
+    <animation include="Instrument-Light4.xml">
+        <object-name>Aiguille1</object-name>
+        <object-name>Aiguille2</object-name>
+        <object-name>Aiguille3</object-name>
+    </animation>
+
+    <animation include="Instrument-Light3.xml">
+        <object-name>Cadran</object-name>
+    </animation>
+
+
+
+<animation include="Instrument-Light3.xml">
+        <object-name>PA-cc</object-name>
+        <object-name>PA-dc</object-name>
+        <object-name>PA-un</object-name>
+        <object-name>PA-di</object-name>
+    </animation>
+
+<!--******************** Hotspots ******************************-->
+    <panel>
+        <path>Aircraft/P-38-Lightning/Instruments/ALT-f4u7-hotspots.xml</path>
+        <bottom-left>
+                <x-m>0.014</x-m>
+                <y-m>-0.0361132</y-m>
+                <z-m>-0.0376666</z-m>
+        </bottom-left>
+        <bottom-right>
+                <x-m>0.014</x-m>
+                <y-m>0.0361132</y-m>
+                <z-m>-0.0376666</z-m>
+        </bottom-right>
+        <top-left>
+                <x-m>0.014</x-m>
+                <y-m>-0.0361132</y-m>
+                <z-m>0.0376666</z-m>
+        </top-left>
+    </panel>
+<!--*************************************************-->
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Aiguille1</object-name>
+        <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+        <factor>-0.36</factor>
+        <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Aiguille2</object-name>
+        <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+        <factor>-0.036</factor>
+        <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Aiguille3</object-name>
+        <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+        <factor>-0.0036</factor>
+        <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+
+
+
+    <animation>
+        <type>rotate</type>
+        <object-name>BoutonG</object-name>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <factor>1000</factor>
+        <center>
+                <x-m>0</x-m>
+                <y-m>-0.0340</y-m>
+                <z-m>-0.0340</z-m>
+        </center>
+        <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>PA-cc</object-name>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <factor>10</factor>
+        <step>0.01</step>
+        <scroll>0.000001</scroll>
+        <axis>
+                <x>0</x>
+                <y>-1</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>PA-dc</object-name>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <factor>1</factor>
+        <step>0.1</step>
+        <scroll>0.00001</scroll>
+        <axis>
+                <x>0</x>
+                <y>-1</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>PA-un</object-name>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <scroll>0.0001</scroll>
+        <axis>
+                <x>0</x>
+                <y>-1</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>PA-di</object-name>
+        <property>/instrumentation/altimeter/setting-inhg</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <scroll>0.001</scroll>
+        <axis>
+                <x>0</x>
+                <y>-1</y>
+                <z>0</z>
+        </axis>
+    </animation>
+
+</PropertyList>
