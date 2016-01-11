@@ -15,6 +15,8 @@ P-38L  by G ROBIN
         <status>alpha, "GPL Copyright"</status>
         <version> 0.1</version>
         <flight-model>jsb</flight-model>
+        <variant-of>P-38L</variant-of>
+        
         <aero>P38L-new</aero>
         <startup>
             <splash-texture>Aircraft/P-38-Lightning/F-5B-e_Splash.rgb</splash-texture>
