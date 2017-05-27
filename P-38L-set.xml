@@ -16,6 +16,20 @@ P-38L  by G ROBIN
         <version> 0.1</version>
         <flight-model>jsb</flight-model>
         <aero>P38L-new</aero>
+        <tags>
+          <tag>lockheed</tag>
+          <tag>mid-wing</tag>
+          <tag>tricycle</tag>
+          <tag>retractable-gear</tag>
+          <tag>twin-engine</tag>
+          <tag>piston</tag>
+          <tag>supercharged</tag>
+          <tag>variable-pitch</tag>
+          <tag>fighter</tag>
+          <tag>reconnaissance</tag>
+          <tag>twin-boom</tag>
+          <tag>ww2</tag>
+        </tags>
         <startup>
             <splash-texture>Aircraft/P-38-Lightning/P-38L-splash.rgb</splash-texture>
         </startup>
